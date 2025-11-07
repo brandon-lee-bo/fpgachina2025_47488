@@ -48,8 +48,7 @@ module tb_riscv_core ();
         end
         $readmemb("instr_core0_init.txt", external_mem);
         $readmemh("scalar_core0_init.txt", external_mem, 2048);
-        $readmemb("instr_core1_init.txt", external_mem, 1024);
-        $readmemh("scalar_core1_init.txt", external_mem, 3072);
+
         $readmemh("external_mem_init.txt", ram);
     end
 
