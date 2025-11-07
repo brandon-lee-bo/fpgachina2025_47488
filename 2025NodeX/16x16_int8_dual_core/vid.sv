@@ -789,7 +789,7 @@ always_ff @(posedge clk or negedge rstn) begin
             compute_cnt <= '0; 
             compute_load_done <= 1'b1;
             compute_valid <= 1'b0;
-        end else if(pe_op == PE_SPMM_COMPUTE && !compute_load_done && (compute_cnt <= compute_row_data_num) && dense_buf_read_en_o) begin
+        end else if(pe_op == PE_SPMM_COMPUTE && !compute_load_done && (compute_cnt <= compute_row_data_num) && (dense_buf_read_en_o || extra_load_done)) begin
             if(compute_rows_id_i[compute_cnt - 1] == extra_rows_id[extra_load_count]) begin
                 compute_load_done <= 1'b0;
             end
@@ -1207,7 +1207,7 @@ always_ff @(posedge clk or negedge rstn) begin
         if(extra_load_done && opcode == V_OPCODE_SPMM && funct6 == V_FUNCT6_COMPUTE) begin
             extra_load_num_ready <= 1'b0;
             extra_load_num_reg <= extra_load_num_reg;
-        end else if(opcode == V_OPCODE_SPMM && funct6 == V_FUNCT6_COMPUTE && !extra_load_done) begin
+        end else if(opcode == V_OPCODE_SPMM && funct6 == V_FUNCT6_COMPUTE) begin
             extra_load_num_reg <= extra_load_num_i;
             extra_load_num_ready <= 1'b1;
         end else if(opcode == V_OPCODE_SPMM && funct6 == V_FUNCT6_COMPUTE) begin
@@ -1251,10 +1251,14 @@ always_ff @(posedge clk or negedge rstn) begin
                 extra_load_valid <= 1'b1;
                 extra_load_done <= 1'b0;
             end
-        end else begin
+        end else if(spmm_compute_done) begin
             dense_buf_read_count <= '0;
             extra_load_valid <= 1'b0;
             extra_load_done <= 1'b0;
+        end else begin
+            dense_buf_read_count <= dense_buf_read_count;
+            extra_load_valid <= extra_load_valid;
+            extra_load_done <= extra_load_done;
         end
     end
 end

@@ -29,6 +29,17 @@ module riscv_core #(
 );
 
 
+clk_wiz_0 instance_name
+   (
+    // Clock out ports
+    .clk_out1(clk_out1),     // output clk_out1
+    // Status and control signals
+    .reset(~rstn), // input reset
+    .locked(locked),       // output locked
+   // Clock in ports
+    .clk_in1(clk)      // input clk_in1
+);
+
 ////////////////////////////////////////////////////////////////
 // 各模块输出信号
 
@@ -143,7 +154,7 @@ pc_reg #(
 )
 u_pc_reg (
     .pc_o(pc_addr_o),                           // 程序计数器地址
-    .clk(clk),                                  // 时钟信号
+    .clk(clk_out1),                                  // 时钟信号
     .rstn(rstn),                                // 复位信号
     .hold_flag_i(hold_ctrls[0]),                 // 流水线暂停标志
     .pc_req_o(nib_pc_req_o)
@@ -166,7 +177,7 @@ vcsrs u_vcsrs (
     .vsew(vsew),                              // 向量元素宽度
     .vlmul(vlmul),                            // 向量长度乘数
 
-    .clk(clk),                                // 时钟信号
+    .clk(clk_out1),                                // 时钟信号
     .rstn(rstn),                              // 复位信号（低有效）
     .avl_in(scalar_operand),                  // 可用向量长度（假设使用标量操作数）
     .vtype_in(immediate_operand[7:0]),        // 向量类型（假设使用立即数低 8 位）
@@ -180,7 +191,7 @@ if_id u_if_id (
     .inst_o(if_inst_o),                       // 指令内容
     .inst_addr_o(if_inst_addr_o),             // 指令地址
 
-    .clk(clk),                                // 时钟信号
+    .clk(clk_out1),                                // 时钟信号
     .rstn(rstn),                                // 复位信号
     .inst_i(nib_pc_data_i),                   // 从 AXI 总线取到的指令
     .inst_addr_i(pc_addr_o),                     // 指令地址
@@ -229,7 +240,7 @@ vid u_vid (
     .operand_select(id_operand_select_o),     // 操作数选择 （arith模块利用case来给pe_data赋值）
 
 
-    .clk(clk),                                // 时钟信号
+    .clk(clk_out1),                                // 时钟信号
     .rstn(rstn),                              // 复位信号（低有效）    
     .hold_id(hold_ctrls[1]),                  // hold输入 todo
     .instr_i(if_inst_o),                      // 指令内容    
@@ -320,7 +331,7 @@ vrf u_vrf (
     .max_load_cnt(max_load_cnt),            // 最大加载计数器
     .max_write_cnt(max_write_cnt),          // 最大存储计数器
     .reduction(reduction),                // 归约操作
-    .clk(clk),                                // 时钟信号
+    .clk(clk_out1),                                // 时钟信号
     .rstn(rstn),                              // 复位信号（低有效）
     .write_en((vlsu_done & !id_vd_data_src_o)|cycle_done|id_vrf_write_o|id_dense_buf_read_en_o ),        // 写使能（来自 vid 或 vlsu）id_vrf_write_o  comp_done
     .load_en( id_vrf_load_o | id_vlsu_store_o)           // 加载使能  id_vlsu_load_o
@@ -336,7 +347,7 @@ vex u_vex (
     .comp_done(comp_done),                    // GEMV 完成标志 TODO
     .nib_hold_i(nib_hold_req_i),
 
-    .clk(clk),                                // 时钟信号
+    .clk(clk_out1),                                // 时钟信号
     .rstn(rstn),                              // 复位信号（低有效）
     .vex_en(id_vex_en),                       // vex 使能
     .vrf_load(id_vrf_load_o),               // 向量寄存器加载使能
@@ -378,7 +389,7 @@ vex u_vex (
 
 // 8. vlsu 模块：向量加载/存储单元
 vlsu u_vlsu (
-    .clk(clk),                                
+    .clk(clk_out1),                                
     .rstn(rstn),                              
     .vl(8'd4),                                
     .vsew_i(2'd2),                            
@@ -416,7 +427,7 @@ vlsu u_vlsu (
 
 //9. sparse_buf 模块：稀疏矩阵缓冲
 sparse_buf u_sparse_buf(
-    .clk         (clk                ),
+    .clk         (clk_out1                ),
     .rstn        (rstn               ),
 
     .load_en     (buf_load_en        ),//从buffer读出数据给vex
@@ -432,7 +443,7 @@ logic [31:0] csr_write_data_o;
 
 //10. csr_dma 模块：从外部存储读取,不需要写功能
 dma u_csr_dma(
-    .clk                (clk                    ),
+    .clk                (clk_out1                    ),
     .rstn               (rstn                   ),
 
     .store_mem_en       (id_dma_store_en        ),//要往dma中存入下一个稀疏矩阵数据
@@ -472,7 +483,7 @@ end
 logic [127:0] dense_buf_read_data_o;
 
 dense_buf u_dense_buf(
-    .clk                (clk            ),
+    .clk                (clk_out1            ),
     .rstn               (rstn           ),
 
     .write_en_i         (id_dense_buf_write_en_o      ),

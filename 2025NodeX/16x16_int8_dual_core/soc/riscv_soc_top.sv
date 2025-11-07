@@ -3,11 +3,17 @@ module riscv_soc_top(
     input wire rstn,
 
     output logic [31:0] core0_nib_ex_data_o,
-    output logic        core0_nib_ex_req_o,
     output logic [31:0] core0_nib_ex_addr_o,
-    output logic        core0_nib_ex_we_o,
-    output logic        core0_nib_pc_req_o,
-    output logic [31:0] core0_nib_pc_addr_o
+
+    output logic [31:0] core0_nib_pc_addr_o,
+
+    output logic [31:0] s0_addr_o,
+    output logic [31:0] rd_ram_o,
+    output logic [31:0] s0_wr_data_o,
+
+    output logic [31:0] rd_instr_o,
+    output logic [31:0] s1_wr_data_o
+
 );
 
 // NIB master interface signals
@@ -30,17 +36,16 @@ logic [31:0] m4_rd_data_o;
 logic [31:0] m5_rd_data_o;
 
 // NIB slave interface signals
-logic        s0_data_req_o;
-logic [31:0] s0_addr_o;
-logic [31:0] rd_ram_o;
-logic        s0_wr_en_o;
-logic [31:0] s0_wr_data_o;
 
-logic        s1_data_req_o;
+logic        core0_nib_ex_we_o;
+logic        core0_nib_pc_req_o;
+logic        core0_nib_ex_req_o;
 logic [31:0] s1_addr_o;
-logic [31:0] rd_instr_o;
+
+logic        s0_data_req_o;
+logic        s0_wr_en_o;
+logic        s1_data_req_o;
 logic        s1_wr_en_o;
-logic [31:0] s1_wr_data_o;
 
 logic        s2_data_req_o;
 logic [31:0] s2_addr_o;
