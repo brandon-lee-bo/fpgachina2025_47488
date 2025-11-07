@@ -86,7 +86,7 @@ enum {WAIT, EXEC, HOLD, BUS_HOLD} state, next_state;
 logic [3:0] max_cycle_count;   // 多周期指令的最大周期计数
 logic multi_cycle_instr;       // 是否为多周期指令
 logic fix_vd_addr;             // 是否固定目标寄存器地址(部分指令如vadd或浮点存储需要)
-logic scalar_operand_ready;    // 使能vlsu的辅助信号 scalar_operand更新好之后使能 不然默认是零处理不了类似1100的row_index
+logic scalar_operand_ready = 0;    // 使能vlsu的辅助信号 scalar_operand更新好之后使能 不然默认是零处理不了类似1100的row_index
 logic [31:0] reg_instr;        // 暂存指令
 logic [15:0] dense_index_reg;      // 暂存dense矩阵的行索引
 logic [3:0] dense_id_reg[4];
@@ -234,7 +234,7 @@ always_ff @(posedge clk or negedge rstn) begin
         end
 
 // 保持原有的scalar_operand逻辑不变
-if ((load_index_ready_i && (opcode == V_OPCODE_SPMM && funct6 == V_FUNCT6_LOAD)) || pe_op == PE_SPMM_FIX_ROW) begin
+if ((load_index_ready_r && (opcode == V_OPCODE_SPMM && funct6 == V_FUNCT6_LOAD)) || pe_op == PE_SPMM_FIX_ROW) begin
     // 第一优先级：非HOLD状态时的row_index编码
     if (state == EXEC) begin
         scalar_operand_ready = 1'b1;
@@ -430,6 +430,7 @@ if ((load_index_ready_i && (opcode == V_OPCODE_SPMM && funct6 == V_FUNCT6_LOAD))
     end
         end else begin
             scalar_operand <= instr_i[1];
+            scalar_operand_ready  = 1'b0;
         end
     end
 end
@@ -473,8 +474,11 @@ begin
                 next_state <= HOLD;
                 hold_req_o <= 4'b0001;
                 core_activate <= 1'b1;
-            end
-            else if(funct6 == V_FUNCT6_LOAD) begin
+            end else if (pe_op == PE_SPMM_FIX_ROW) begin
+                hold_req_o <= 4'b0001;
+                next_state <= EXEC;
+                core_activate <= 1'b0;
+            end else if(funct6 == V_FUNCT6_LOAD) begin
                 hold_req_o <= 4'b0001;
                 next_state <= EXEC;
                 core_activate <= 1'b0;  
@@ -931,8 +935,8 @@ begin
                         pe_op = PE_SPMM_FIX_ROW;     //vex的工作模式 vex todo  随便改的 目的是让spmm_done拉低一下
                         vrf_load = 1'b0;          //trgger vrf start load data  ， write_en
                         sparse_load = 1'b0;
-                        vlsu_en_o = 1'b1;
-                        vlsu_load_o = 1'b1;
+                        vlsu_en_o = scalar_operand_ready;
+                        vlsu_load_o = scalar_operand_ready;     //使能vlsu的load功能
                         dma_store_en = 1'b0;
                         operand_select = PE_OPERAND_CSR; // 其中一个操作数来自CSR寄存器（稀疏矩阵数据）
                     end
@@ -971,12 +975,18 @@ begin
                         load_index_o <= 1'b1; //让vex内部的buf读出一个index给vid
                         vex_en = 1'b1;
                         dense_buf_write_addr_o = vd_addr_r;
-                        if(load_index_ready_r && scalar_operand_ready) begin     //ready之后在进入HOLD
+                        if(load_index_ready_r && scalar_operand_ready && extra_row_index) begin     //ready之后在进入HOLD
                             vlsu_en_o = 1'b1;        //使能vlsu
                             vlsu_load_o = 1'b1;     //使能vlsu的load功能
                             dense_buf_write_en_o = 1'b0;   //使能dense buffer写入
                             pe_op = PE_SPMM_LOAD;
                             operand_select = PE_OPERAND_CSR; // 其中一个操作数来自CSR寄存器（稀疏矩阵数据）
+                        end else if(load_index_ready_r && scalar_operand_ready && !extra_row_index) begin
+                            vlsu_en_o = 1'b1;        //使能vlsu
+                            vlsu_load_o = 1'b0;     //使能vlsu的load功能
+                            dense_buf_write_en_o = 1'b0;   //使能dense buffer写入
+                            pe_op = PE_SPMM_LOAD;
+                            operand_select = PE_OPERAND_CSR;
                         end else begin 
                             vlsu_en_o = 1'b0;        //使能vlsu
                             vlsu_load_o = 1'b0;     //使能vlsu的load功能
@@ -1074,7 +1084,8 @@ begin
                 sparse_load = 1'b1; 
                 sparse_write = 1'b0;
                 vex_en = 1'b1;
-                
+                dma_store_en <= 1'b0;
+                dma_max_data_cnt = 0;
                 if(spmm_compute_done) begin
                     dense_buf_write_en_o = 1'b1;
                     dense_buf_write_addr_o = dense_write_addr;
@@ -1090,21 +1101,14 @@ begin
                 end else begin
                     vrf_load = 1'b0;
                 end
-                if(extra_load_num_ready) begin
-                    dense_buf_read_en_o <= 1'b1;
+                if(extra_load_num_ready && !extra_load_done) begin
+                    dense_buf_read_en_o = 1'b1;
                     dense_buf_read_addr_o = dense_read_addr;
                     vrf_write = 1'b1;          //组合逻辑直接算完直接写入 不用vex回传一个信号
                 end else begin
                     dense_buf_read_en_o <= 1'b0;
                     dense_buf_read_addr_o = '0;
                     vrf_write = 1'b0;          //组合逻辑直接算完直接写入 不用vex回传一个信号
-                end
-                if(dma_store_done) begin
-                    dma_store_en <= 1'b0;
-                    dma_max_data_cnt = 0;
-                end else begin
-                    dma_store_en <= 1'b1;
-                    dma_max_data_cnt = 35;
                 end
             end
             V_FUNCT6_LOAD: begin //spmm load
@@ -1236,11 +1240,15 @@ always_ff @(posedge clk or negedge rstn) begin
     if(~rstn) begin
         dense_buf_read_count <= '0;
         extra_load_done <= '0;
+        extra_load_valid <= '0;
     end else begin
-        if(pe_op == PE_SPMM_COMPUTE && compute_row_data_num == '0) begin
+        if(pe_op == PE_SPMM_COMPUTE && compute_row_data_num == '0 && !spmm_compute_done) begin
             extra_load_valid <= '1;
             extra_load_done <= 1'b1;    
-        end
+        end else if(pe_op == PE_SPMM_COMPUTE && compute_row_data_num == '0 && spmm_compute_done) begin
+            extra_load_valid <= 1'b0;
+            extra_load_done <= 1'b0;
+        end else 
         if(pe_op == PE_SPMM_COMPUTE && extra_load_num_ready) begin
             if(dense_buf_read_count == (extra_load_num_reg)) begin
                 dense_buf_read_count <= '0;

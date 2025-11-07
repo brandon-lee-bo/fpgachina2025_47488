@@ -48,13 +48,14 @@ module tb_riscv_core ();
         end
         $readmemb("instr_core0_init.txt", external_mem);
         $readmemh("scalar_core0_init.txt", external_mem, 2048);
-
+        $readmemb("instr_core1_init.txt", external_mem, 1024);
+        $readmemh("scalar_core1_init.txt", external_mem, 3072);
         $readmemh("external_mem_init.txt", ram);
     end
 
     // 时钟生成
     always begin
-        #2.5 clk = ~clk; // 5ns 周期
+        #10 clk = ~clk; // 20ns 周期
     end
 
     // AXI 总线模拟

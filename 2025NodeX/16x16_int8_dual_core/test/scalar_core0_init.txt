@@ -1,5 +1,5 @@
-00000100  //instr dma        公式：数据位置-1再乘4再转成十六进制 dma需要的两个稀疏矩阵的起始地址 
-0000018c  //instr cal_index  公式：数据位置-1再乘4再转成十六进制  cal_index需要的是第二个稀疏矩阵的地址 这个地方要减1 原本是2bc但是要减1
+00000200  //instr dma        公式：数据位置-1再乘4再转成十六进制 dma需要的两个稀疏矩阵的起始地址 
+0000028c  //instr cal_index  公式：数据位置-1再乘4再转成十六进制  cal_index需要的是第二个稀疏矩阵的地址 这个地方要减1 原本是2bc但是要减1
 00000000  //instr fix_row
 00000000  //instr load1
 00000000  //instr compute
@@ -34,38 +34,38 @@
 00000000  //instr load16
 00000000  //instr compute
 00000000  //instr cal_index
-00000000  //instr fix_row
-00000000  //instr load
+00000100  //instr fix_row
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
-00000000  //instr load
+00000100  //instr load
 00000000  //instr compute
 00000000  //instr load_tmp
 00000000  //instr add_1
