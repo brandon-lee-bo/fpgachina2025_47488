@@ -1,2 +1,2 @@
-# 2025fpga
+# NodeX
 A Row-based Dataflow Vector Processor for Sparse Matrix–Dense Matrix Multiplication Acceleration
