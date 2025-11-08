@@ -1,14 +1,6 @@
 # NodeX
 This project is about A Row-based Dataflow Vector Processor for sparse matrix–dense matrix multiplication acceleration，particularly wtih a focus on GNN optimization.
 
-## rvv_processor_spmm
-The sv code and testbench. Run on the vivado.
-
-## Documention
-The technical documentation and analysis of this project help you understand the working process of our processor. 
-
-## Motivation
-Our goal is to design and implement a vector processor for GNN acceleration. This document contains the baseline, dataflow, architecture, and innovations of the design accelerator.
 
 ## Overall architecture
 <img width="1563" height="816" alt="image" src="https://github.com/brandon-lee-bo/fpgachina2025_47488/blob/main/2025NodeX/docs/pics/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png" />
