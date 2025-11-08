@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Sat Nov  8 19:42:06 2025
+# Process ID: 8872
+# Current directory: E:/SRP/backup_1/backup_16x16
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent45516 E:\SRP\backup_1\backup_16x16\backup_16x16.xpr
+# Log file: E:/SRP/backup_1/backup_16x16/vivado.log
+# Journal file: E:/SRP/backup_1/backup_16x16\vivado.jou
+# Running On        :EggRoll
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 7945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :16844 MB
+# Swap memory       :27917 MB
+# Total Virtual     :44762 MB
+# Available Virtual :16532 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/SRP/backup_1/backup_16x16/backup_16x16.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/SRP/backup_1/backup_16x16/riscv_soc_top_tb_behav.wcfg
+source tb_riscv_core.tcl
+run all
+close_sim

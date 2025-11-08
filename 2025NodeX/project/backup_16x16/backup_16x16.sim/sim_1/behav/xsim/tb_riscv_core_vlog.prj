@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../backup_16x16.ip_user_files/ipstatic" \
+"../../../../backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+
+sv xil_defaultlib  --include "../../../../backup_16x16.ip_user_files/ipstatic" \
+"../../../../../../src/rtl/core/csr_dma.sv" \
+"../../../../../../src/rtl/core/if_id.sv" \
+"../../../../../../src/rtl/core/ctrl.sv" \
+"../../../../../../src/rtl/utils/dense_buffer.sv" \
+"../../../../../../src/rtl/core/pc_reg.sv" \
+"../../../../../../src/rtl/riscv_core_top.sv" \
+"../../../../../../src/rtl/utils/sparse_buf.sv" \
+"../../../../../../src/rtl/core/vcsrs.sv" \
+"../../../../../../src/rtl/core/vex.sv" \
+"../../../../../../src/rtl/core/vid.sv" \
+"../../../../../../src/rtl/core/vlsu.sv" \
+"../../../../../../src/rtl/core/vrf.sv" \
+"../../../../../../src/testbench/single_core_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

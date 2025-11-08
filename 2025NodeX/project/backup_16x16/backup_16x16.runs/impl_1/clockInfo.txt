@@ -1,0 +1,10 @@
+-------------------------------------
+| Tool Version : Vivado v.2024.1.2
+| Date         : Sat Nov  8 19:53:32 2025
+| Host         : EggRoll
+| Design       : design_1
+| Device       : xc7a100t-fgg484-2--
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+

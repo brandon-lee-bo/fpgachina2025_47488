@@ -1,0 +1,21 @@
+0.7
+2020.2
+Sep  5 2024
+15:23:16
+E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1762594173,verilog,,,,clk_wiz_0,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1762594173,verilog,,E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,uvm,,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/csr_dma.sv,1762343156,systemVerilog,E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/core/if_id.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/core/pc_reg.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/core/vlsu.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/core/vrf.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/utils/dense_buffer.sv;E:/SRP/fpga2025/2025NodeX/src/rtl/utils/sparse_buf.sv,E:/SRP/fpga2025/2025NodeX/src/rtl/core/if_id.sv,,$unit_csr_dma_sv_2018369595;dma,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv,1762343156,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/utils/dense_buffer.sv,,ctrl,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/if_id.sv,1762343156,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv,E:/SRP/fpga2025/2025NodeX/src/rtl/core/rvv_pkg.sv,gen_pipe_dff;if_id,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/pc_reg.sv,1762343156,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv,,pc_reg,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/rvv_pkg.sv,1762498843,verilog,E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv,,,rvv_pkg,,,,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv,1762343156,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv,,vcsrs,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv,1762499437,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv,,lane;vex,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv,1762596808,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/core/vlsu.sv,,vid,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/vlsu.sv,1762343156,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/core/vrf.sv,,temporary_reg;vlsu,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/core/vrf.sv,1762472571,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv,,vrf,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv,1762596676,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/utils/sparse_buf.sv,,riscv_core,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/utils/dense_buffer.sv,1762343156,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/core/pc_reg.sv,,dense_buf,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/rtl/utils/sparse_buf.sv,1762343156,systemVerilog,,E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv,,sparse_buf,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,
+E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv,1762600471,systemVerilog,,,,$unit_single_core_tb_sv;tb_riscv_core,,uvm,../../../../backup_16x16.ip_user_files/ipstatic,,,,,

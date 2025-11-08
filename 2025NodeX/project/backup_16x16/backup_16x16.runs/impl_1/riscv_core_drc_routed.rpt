@@ -1,0 +1,536 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Sat Nov  8 19:54:52 2025
+| Host         : EggRoll running 64-bit major release  (build 9200)
+| Command      : report_drc -file riscv_core_drc_routed.rpt -pb riscv_core_drc_routed.pb -rpx riscv_core_drc_routed.rpx
+| Design       : riscv_core
+| Device       : xc7a100tfgg484-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 94
++-----------+------------------+-----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                         | Violations |
++-----------+------------------+-----------------------------------------------------+------------+
+| NSTD-1    | Critical Warning | Unspecified I/O Standard                            | 1          |
+| UCIO-1    | Critical Warning | Unconstrained Logical Port                          | 1          |
+| CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153  | Warning          | Gated clock check                                   | 90         |
+| RTSTAT-10 | Warning          | No routable loads                                   | 1          |
++-----------+------------------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+197 out of 197 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: nib_ex_addr_o[31:0], nib_ex_data_i[31:0], nib_ex_data_o[31:0],
+nib_pc_addr_o[31:0], nib_pc_data_i[0][18], nib_pc_data_i[0][20],
+nib_pc_data_i[0][21], nib_pc_data_i[0][22], nib_pc_data_i[0][23],
+nib_pc_data_i[0][25], nib_pc_data_i[0][26], nib_pc_data_i[0][27],
+nib_pc_data_i[0][28], nib_pc_data_i[0][29], nib_pc_data_i[0][30]
+ (the first 15 of 42 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+197 out of 197 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: nib_ex_addr_o[31:0], nib_ex_data_i[31:0], nib_ex_data_o[31:0],
+nib_pc_addr_o[31:0], nib_pc_data_i[0][18], nib_pc_data_i[0][20],
+nib_pc_data_i[0][21], nib_pc_data_i[0][22], nib_pc_data_i[0][23],
+nib_pc_data_i[0][25], nib_pc_data_i[0][26], nib_pc_data_i[0][27],
+nib_pc_data_i[0][28], nib_pc_data_i[0][29], nib_pc_data_i[0][30]
+ (the first 15 of 42 listed).
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net u_csr_dma/load_data_o_reg[31]_i_2_n_9 is a gated clock net sourced by a combinational pin u_csr_dma/load_data_o_reg[31]_i_2/O, cell u_csr_dma/load_data_o_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net u_csr_dma/sparse_store_done_reg_i_2_n_9 is a gated clock net sourced by a combinational pin u_csr_dma/sparse_store_done_reg_i_2/O, cell u_csr_dma/sparse_store_done_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net u_vex/buf_load_en_reg/G0 is a gated clock net sourced by a combinational pin u_vex/buf_load_en_reg/L3_2/O, cell u_vex/buf_load_en_reg/L3_2 (in u_vex/buf_load_en_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net u_vex/compute_row_data_num_reg[4]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_row_data_num_reg[4]_i_2/O, cell u_vex/compute_row_data_num_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net u_vex/compute_rows_id_reg[0][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_rows_id_reg[0][3]_i_2/O, cell u_vex/compute_rows_id_reg[0][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net u_vex/compute_rows_id_reg[1][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_rows_id_reg[1][3]_i_2/O, cell u_vex/compute_rows_id_reg[1][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net u_vex/compute_rows_id_reg[2][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_rows_id_reg[2][3]_i_2/O, cell u_vex/compute_rows_id_reg[2][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net u_vex/compute_rows_id_reg[3][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_rows_id_reg[3][3]_i_2/O, cell u_vex/compute_rows_id_reg[3][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net u_vex/compute_rows_id_reg[4][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_rows_id_reg[4][3]_i_2/O, cell u_vex/compute_rows_id_reg[4][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net u_vex/compute_rows_id_reg[5][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_rows_id_reg[5][3]_i_2/O, cell u_vex/compute_rows_id_reg[5][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net u_vex/compute_rows_id_reg[6][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_rows_id_reg[6][3]_i_2/O, cell u_vex/compute_rows_id_reg[6][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net u_vex/compute_rows_id_reg[7][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/compute_rows_id_reg[7][3]_i_2/O, cell u_vex/compute_rows_id_reg[7][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net u_vex/extra_rows_id_reg[0][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/extra_rows_id_reg[0][3]_i_2/O, cell u_vex/extra_rows_id_reg[0][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net u_vex/extra_rows_id_reg[1][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/extra_rows_id_reg[1][3]_i_2/O, cell u_vex/extra_rows_id_reg[1][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net u_vex/extra_rows_id_reg[2][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/extra_rows_id_reg[2][3]_i_2/O, cell u_vex/extra_rows_id_reg[2][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net u_vex/extra_rows_id_reg[3][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/extra_rows_id_reg[3][3]_i_2/O, cell u_vex/extra_rows_id_reg[3][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net u_vex/extra_rows_id_reg[4][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/extra_rows_id_reg[4][3]_i_2/O, cell u_vex/extra_rows_id_reg[4][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net u_vex/extra_rows_id_reg[5][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/extra_rows_id_reg[5][3]_i_2/O, cell u_vex/extra_rows_id_reg[5][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net u_vex/extra_rows_id_reg[6][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/extra_rows_id_reg[6][3]_i_2/O, cell u_vex/extra_rows_id_reg[6][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net u_vex/extra_rows_id_reg[7][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/extra_rows_id_reg[7][3]_i_2/O, cell u_vex/extra_rows_id_reg[7][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net u_vex/next_state_reg[1]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/next_state_reg[1]_i_2/O, cell u_vex/next_state_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net u_vex/sorted_top_rows_reg[0][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/sorted_top_rows_reg[0][3]_i_2/O, cell u_vex/sorted_top_rows_reg[0][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net u_vex/sorted_top_rows_reg[1][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/sorted_top_rows_reg[1][3]_i_2/O, cell u_vex/sorted_top_rows_reg[1][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net u_vex/sorted_top_rows_reg[2][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/sorted_top_rows_reg[2][3]_i_2/O, cell u_vex/sorted_top_rows_reg[2][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net u_vex/sorted_top_rows_reg[3][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/sorted_top_rows_reg[3][3]_i_2/O, cell u_vex/sorted_top_rows_reg[3][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net u_vex/spmm_row_data_num_reg[4]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/spmm_row_data_num_reg[4]_i_2/O, cell u_vex/spmm_row_data_num_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net u_vex/top_rows_reg[3][3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vex/top_rows_reg[3][3]_i_2/O, cell u_vex/top_rows_reg[3][3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net u_vid/E[0] is a gated clock net sourced by a combinational pin u_vid/row_index_r_reg[15]_i_2/O, cell u_vid/row_index_r_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net u_vid/compute_load_stationary_addr__0 is a gated clock net sourced by a combinational pin u_vid/compute_load_stationary_addr_reg[1]_i_2/O, cell u_vid/compute_load_stationary_addr_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net u_vid/core_activate_reg_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/core_activate_reg_i_2/O, cell u_vid/core_activate_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net u_vid/dense_buf_read_addr_o_reg[5]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/dense_buf_read_addr_o_reg[5]_i_2/O, cell u_vid/dense_buf_read_addr_o_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net u_vid/dense_buf_write_addr_o_reg[5]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/dense_buf_write_addr_o_reg[5]_i_2/O, cell u_vid/dense_buf_write_addr_o_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net u_vid/dma_instr_valid_o_reg_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/dma_instr_valid_o_reg_i_2/O, cell u_vid/dma_instr_valid_o_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net u_vid/dma_max_data_cnt_reg[1]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/dma_max_data_cnt_reg[1]_i_2/O, cell u_vid/dma_max_data_cnt_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net u_vid/dma_store_en_reg_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/dma_store_en_reg_i_2/O, cell u_vid/dma_store_en_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net u_vid/hold_req_o_reg[0]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/hold_req_o_reg[0]_i_2/O, cell u_vid/hold_req_o_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net u_vid/p_69_in is a gated clock net sourced by a combinational pin u_vid/compute_load_stationary_reg_i_2/O, cell u_vid/compute_load_stationary_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net u_vid/sparse_load_reg_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/sparse_load_reg_i_2/O, cell u_vid/sparse_load_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_0[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[9][127]_i_1/O, cell u_vid/mem_reg[9][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_10[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[19][127]_i_1/O, cell u_vid/mem_reg[19][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_11[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[20][127]_i_1/O, cell u_vid/mem_reg[20][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_12[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[21][127]_i_1/O, cell u_vid/mem_reg[21][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_13[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[22][127]_i_1/O, cell u_vid/mem_reg[22][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_14[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[23][127]_i_1/O, cell u_vid/mem_reg[23][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_15[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[24][127]_i_1/O, cell u_vid/mem_reg[24][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_16[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[25][127]_i_1/O, cell u_vid/mem_reg[25][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_17[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[26][127]_i_1/O, cell u_vid/mem_reg[26][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_18[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[27][127]_i_1/O, cell u_vid/mem_reg[27][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_19[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[28][127]_i_1/O, cell u_vid/mem_reg[28][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_1[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[10][127]_i_1/O, cell u_vid/mem_reg[10][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_20[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[29][127]_i_1/O, cell u_vid/mem_reg[29][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_21[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[30][127]_i_1/O, cell u_vid/mem_reg[30][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_22[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[31][127]_i_1/O, cell u_vid/mem_reg[31][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_23[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[32][127]_i_1/O, cell u_vid/mem_reg[32][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_24[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[33][127]_i_1/O, cell u_vid/mem_reg[33][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_25[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[34][127]_i_1/O, cell u_vid/mem_reg[34][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_26[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[35][127]_i_1/O, cell u_vid/mem_reg[35][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_27[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[36][127]_i_1/O, cell u_vid/mem_reg[36][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_28[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[37][127]_i_1/O, cell u_vid/mem_reg[37][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_29[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[38][127]_i_1/O, cell u_vid/mem_reg[38][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_2[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[11][127]_i_1/O, cell u_vid/mem_reg[11][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_30[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[39][127]_i_1/O, cell u_vid/mem_reg[39][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_31[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[40][127]_i_1/O, cell u_vid/mem_reg[40][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_32[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[41][127]_i_1/O, cell u_vid/mem_reg[41][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_33[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[42][127]_i_1/O, cell u_vid/mem_reg[42][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_34[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[43][127]_i_1/O, cell u_vid/mem_reg[43][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_35[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[44][127]_i_1/O, cell u_vid/mem_reg[44][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_36[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[45][127]_i_1/O, cell u_vid/mem_reg[45][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_37[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[46][127]_i_1/O, cell u_vid/mem_reg[46][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_38[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[47][127]_i_1/O, cell u_vid/mem_reg[47][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_39[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[48][127]_i_1/O, cell u_vid/mem_reg[48][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_3[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[12][127]_i_1/O, cell u_vid/mem_reg[12][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_40[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[49][127]_i_1/O, cell u_vid/mem_reg[49][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_41[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[50][127]_i_1/O, cell u_vid/mem_reg[50][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_42[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[51][127]_i_1/O, cell u_vid/mem_reg[51][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_43[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[52][127]_i_1/O, cell u_vid/mem_reg[52][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_44[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[53][127]_i_1/O, cell u_vid/mem_reg[53][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_45[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[54][127]_i_1/O, cell u_vid/mem_reg[54][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_46[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[55][127]_i_1/O, cell u_vid/mem_reg[55][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_47[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[56][127]_i_1/O, cell u_vid/mem_reg[56][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_48[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[57][127]_i_1/O, cell u_vid/mem_reg[57][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_49[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[58][127]_i_1/O, cell u_vid/mem_reg[58][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_4[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[13][127]_i_1/O, cell u_vid/mem_reg[13][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_50[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[59][127]_i_1/O, cell u_vid/mem_reg[59][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_5[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[14][127]_i_1/O, cell u_vid/mem_reg[14][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_6[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[15][127]_i_1/O, cell u_vid/mem_reg[15][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_7[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[16][127]_i_1/O, cell u_vid/mem_reg[16][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_8[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[17][127]_i_1/O, cell u_vid/mem_reg[17][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net u_vid/spmm_compute_done_r_reg_9[0] is a gated clock net sourced by a combinational pin u_vid/mem_reg[18][127]_i_1/O, cell u_vid/mem_reg[18][127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net u_vid/vs2_addr_reg[3]_i_2_n_9 is a gated clock net sourced by a combinational pin u_vid/vs2_addr_reg[3]_i_2/O, cell u_vid/vs2_addr_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+976 net(s) have no routable loads. The problem bus(es) and/or net(s) are u_csr_dma/addr_reg0_carry__0_n_10, u_csr_dma/addr_reg0_carry__0_n_11,
+u_csr_dma/addr_reg0_carry__0_n_12, u_csr_dma/addr_reg0_carry__1_n_10,
+u_csr_dma/addr_reg0_carry__1_n_11, u_csr_dma/addr_reg0_carry__1_n_12,
+u_csr_dma/addr_reg0_carry__2_n_10, u_csr_dma/addr_reg0_carry__2_n_11,
+u_csr_dma/addr_reg0_carry__2_n_12, u_csr_dma/addr_reg0_carry__3_n_10,
+u_csr_dma/addr_reg0_carry__3_n_11, u_csr_dma/addr_reg0_carry__3_n_12,
+u_csr_dma/addr_reg0_carry__4_n_10, u_csr_dma/addr_reg0_carry__4_n_11,
+u_csr_dma/addr_reg0_carry__4_n_12
+ (the first 15 of 976 listed nets/buses).
+Related violations: <none>
+
+

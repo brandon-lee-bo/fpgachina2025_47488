@@ -1,0 +1,313 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Sat Nov  8 19:53:59 2025
+| Host         : EggRoll running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file riscv_core_control_sets_placed.rpt
+| Design       : riscv_core
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   235 |
+|    Minimum number of control sets                        |   235 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   284 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   235 |
+| >= 0 to < 4        |    11 |
+| >= 4 to < 6        |    33 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   179 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             161 |           70 |
+| No           | No                    | Yes                    |             113 |           64 |
+| No           | Yes                   | No                     |            8933 |         3900 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            4653 |         1826 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+--------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|                 Clock Signal                 |                Enable Signal               |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------+--------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|  u_vex/buf_load_en_reg/G0                    |                                            |                                                   |                1 |              1 |         1.00 |
+|  u_vid/sparse_load_reg_i_2_n_9               |                                            | u_vid/dma_instr_valid_o_reg_i_3_n_9               |                1 |              1 |         1.00 |
+|  u_vid/core_activate_reg_i_2_n_9             |                                            |                                                   |                1 |              1 |         1.00 |
+|  u_csr_dma/sparse_store_done_reg_i_2_n_9     |                                            |                                                   |                1 |              1 |         1.00 |
+|  u_vid/hold_req_o_reg[0]_i_2_n_9             |                                            |                                                   |                1 |              1 |         1.00 |
+|  u_vid/dma_max_data_cnt_reg[1]_i_2_n_9       |                                            |                                                   |                1 |              1 |         1.00 |
+|  u_vid/dma_instr_valid_o_reg_i_2_n_9         |                                            | u_vid/dma_instr_valid_o_reg_i_3_n_9               |                1 |              1 |         1.00 |
+|  u_vid/dma_store_en_reg_i_2_n_9              |                                            |                                                   |                1 |              1 |         1.00 |
+|  u_vid/compute_load_stationary_addr__0       |                                            | u_vid/compute_load_stationary_addr_reg[1]_i_3_n_9 |                1 |              2 |         2.00 |
+|  u_vid/p_69_in                               |                                            | u_vid/compute_load_stationary_reg_i_3_n_9         |                1 |              2 |         2.00 |
+|  u_vex/next_state_reg[1]_i_2_n_9             |                                            |                                                   |                1 |              2 |         2.00 |
+|  u_vex/sorted_top_rows_reg[0][3]_i_2_n_9     |                                            |                                                   |                3 |              4 |         1.33 |
+|  u_vex/extra_rows_id_reg[6][3]_i_2_n_9       |                                            | u_vex/ex_index_cal_done_o                         |                2 |              4 |         2.00 |
+|  u_vex/extra_rows_id_reg[7][3]_i_2_n_9       |                                            | u_vex/ex_index_cal_done_o                         |                3 |              4 |         1.33 |
+|  u_vex/extra_rows_id_reg[4][3]_i_2_n_9       |                                            | u_vex/ex_index_cal_done_o                         |                1 |              4 |         4.00 |
+|  u_vex/extra_rows_id_reg[3][3]_i_2_n_9       |                                            | u_vex/ex_index_cal_done_o                         |                1 |              4 |         4.00 |
+|  u_vex/extra_rows_id_reg[5][3]_i_2_n_9       |                                            | u_vex/ex_index_cal_done_o                         |                2 |              4 |         2.00 |
+|  u_vex/extra_rows_id_reg[1][3]_i_2_n_9       |                                            | u_vex/ex_index_cal_done_o                         |                2 |              4 |         2.00 |
+|  u_vex/extra_rows_id_reg[2][3]_i_2_n_9       |                                            | u_vex/ex_index_cal_done_o                         |                1 |              4 |         4.00 |
+|  u_vex/extra_rows_id_reg[0][3]_i_2_n_9       |                                            | u_vex/ex_index_cal_done_o                         |                1 |              4 |         4.00 |
+|  u_vex/compute_rows_id_reg[7][3]_i_2_n_9     |                                            | u_vex/ex_index_cal_done_o                         |                1 |              4 |         4.00 |
+|  u_vex/compute_rows_id_reg[6][3]_i_2_n_9     |                                            | u_vex/ex_index_cal_done_o                         |                1 |              4 |         4.00 |
+|  u_vex/compute_rows_id_reg[3][3]_i_2_n_9     |                                            | u_vex/ex_index_cal_done_o                         |                2 |              4 |         2.00 |
+|  u_vex/compute_rows_id_reg[4][3]_i_2_n_9     |                                            | u_vex/ex_index_cal_done_o                         |                2 |              4 |         2.00 |
+|  u_vex/compute_rows_id_reg[2][3]_i_2_n_9     |                                            | u_vex/ex_index_cal_done_o                         |                2 |              4 |         2.00 |
+|  u_vex/compute_rows_id_reg[0][3]_i_2_n_9     |                                            | u_vex/ex_index_cal_done_o                         |                3 |              4 |         1.33 |
+|  u_vex/compute_rows_id_reg[1][3]_i_2_n_9     |                                            | u_vex/ex_index_cal_done_o                         |                1 |              4 |         4.00 |
+|  u_vex/sorted_top_rows_reg[3][3]_i_2_n_9     |                                            |                                                   |                1 |              4 |         4.00 |
+|  u_vex/compute_rows_id_reg[5][3]_i_2_n_9     |                                            | u_vex/ex_index_cal_done_o                         |                1 |              4 |         4.00 |
+|  u_vex/sorted_top_rows_reg[2][3]_i_2_n_9     |                                            |                                                   |                2 |              4 |         2.00 |
+|  u_vex/sorted_top_rows_reg[1][3]_i_2_n_9     |                                            |                                                   |                1 |              4 |         4.00 |
+|  instance_name/inst/clk_out1                 |                                            |                                                   |                4 |              5 |         1.25 |
+|  instance_name/inst/clk_out1                 | u_vex/load_index_count[4]_i_1_n_9          | u_dense_buf/rstn                                  |                2 |              5 |         2.50 |
+|  instance_name/inst/clk_out1                 | u_vex/load_matrix_num                      | u_dense_buf/rstn                                  |                2 |              5 |         2.50 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_compute_done_r_reg_2[0]         | u_dense_buf/rstn                                  |                1 |              5 |         5.00 |
+|  instance_name/inst/clk_out1                 | u_vid/extra_load_num_ready                 | u_dense_buf/rstn                                  |                2 |              5 |         2.50 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_compute_indice_ptr              | u_dense_buf/rstn                                  |                1 |              5 |         5.00 |
+|  instance_name/inst/clk_out1                 | u_vex/compute_matrix_num[4]_i_1_n_9        | u_dense_buf/rstn                                  |                2 |              5 |         2.50 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_addr_r                            | u_dense_buf/rstn                                  |                2 |              5 |         2.50 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[132]_i_1_n_9            | u_dense_buf/rstn                                  |                3 |              5 |         1.67 |
+|  u_vex/ex_index_ready_o                      |                                            | u_vex/ex_spmm_compute_done                        |                3 |              5 |         1.67 |
+|  u_vex/compute_row_data_num_reg[4]_i_2_n_9   |                                            | u_vid/AR[0]                                       |                2 |              5 |         2.50 |
+|  instance_name/inst/clk_out1                 | u_vid/extra_load_count[4]_i_1_n_9          | u_dense_buf/rstn                                  |                2 |              5 |         2.50 |
+|  u_vex/spmm_row_data_num_reg[4]_i_2_n_9      |                                            |                                                   |                2 |              5 |         2.50 |
+|  instance_name/inst/clk_out1                 | u_vid/number_rows[5]_i_1_n_9               | u_dense_buf/rstn                                  |                3 |              6 |         2.00 |
+|  instance_name/inst/clk_out1                 | u_vid/compute_cnt[4]_i_1_n_9               | u_dense_buf/rstn                                  |                3 |              6 |         2.00 |
+|  instance_name/inst/clk_out1                 | u_vid/dense_write_addr                     | u_dense_buf/rstn                                  |                2 |              6 |         3.00 |
+|  u_vid/dense_buf_write_addr_o_reg[5]_i_2_n_9 |                                            |                                                   |                2 |              6 |         3.00 |
+|  instance_name/inst/clk_out1                 | u_vlsu/FSM_onehot_current_state[6]_i_1_n_9 | u_dense_buf/rstn                                  |                4 |              7 |         1.75 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_compute_indice_base[6]_i_1_n_9  | u_dense_buf/rstn                                  |                2 |              7 |         3.50 |
+|  instance_name/inst/clk_out1                 | u_csr_dma/data_count                       | u_dense_buf/rstn                                  |                2 |              8 |         4.00 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/load_data_count[5]_i_1_n_9    | u_dense_buf/rstn                                  |                3 |              9 |         3.00 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_index_count_r                   | u_dense_buf/rstn                                  |                3 |              9 |         3.00 |
+|  u_vid/vs2_addr_reg[3]_i_2_n_9               |                                            |                                                   |                3 |              9 |         3.00 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_data_ptr[7]_i_1_n_9             | u_dense_buf/rstn                                  |                4 |             10 |         2.50 |
+|  instance_name/inst/clk_out1                 | u_vex/store_data_count[4]_i_1__0_n_9       | u_dense_buf/rstn                                  |                3 |             11 |         3.67 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[13][15]_i_1_n_9 | u_dense_buf/rstn                                  |               10 |             16 |         1.60 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[1][15]_i_1_n_9  | u_dense_buf/rstn                                  |                4 |             16 |         4.00 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[2][15]_i_1_n_9  | u_dense_buf/rstn                                  |                5 |             16 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[0][15]_i_1_n_9  | u_dense_buf/rstn                                  |               11 |             16 |         1.45 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[3][15]_i_1_n_9  | u_dense_buf/rstn                                  |                7 |             16 |         2.29 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[5][15]_i_1_n_9  | u_dense_buf/rstn                                  |                6 |             16 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[14][15]_i_1_n_9 | u_dense_buf/rstn                                  |               13 |             16 |         1.23 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[12][15]_i_1_n_9 | u_dense_buf/rstn                                  |                9 |             16 |         1.78 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[6][15]_i_1_n_9  | u_dense_buf/rstn                                  |               10 |             16 |         1.60 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[7][15]_i_1_n_9  | u_dense_buf/rstn                                  |                9 |             16 |         1.78 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[8][15]_i_1_n_9  | u_dense_buf/rstn                                  |               10 |             16 |         1.60 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[10][15]_i_1_n_9 | u_dense_buf/rstn                                  |                6 |             16 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[4][15]_i_1_n_9  | u_dense_buf/rstn                                  |                8 |             16 |         2.00 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[9][15]_i_1_n_9  | u_dense_buf/rstn                                  |               12 |             16 |         1.33 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[11][15]_i_1_n_9 | u_dense_buf/rstn                                  |                6 |             16 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_vid/extra_row_index0                     | u_dense_buf/rstn                                  |               12 |             16 |         1.33 |
+|  instance_name/inst/clk_out1                 | u_vex/spmm_total_index_buf[15][15]_i_1_n_9 | u_dense_buf/rstn                                  |                8 |             16 |         2.00 |
+|  u_vex/top_rows_reg[3][3]_i_2_n_9            |                                            |                                                   |                8 |             16 |         2.00 |
+|  instance_name/inst/clk_out1                 | u_vid/dense_index_reg0                     | u_dense_buf/rstn                                  |                9 |             16 |         1.78 |
+|  u_vid/E[0]                                  |                                            |                                                   |                6 |             17 |         2.83 |
+|  u_vid/dense_buf_read_addr_o_reg[5]_i_2_n_9  |                                            |                                                   |                8 |             18 |         2.25 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[28]_i_1_n_9             | u_dense_buf/rstn                                  |                4 |             20 |         5.00 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[124]_i_1_n_9            | u_dense_buf/rstn                                  |                4 |             20 |         5.00 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[60]_i_1_n_9             | u_dense_buf/rstn                                  |                6 |             20 |         3.33 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[92]_i_1_n_9             | u_dense_buf/rstn                                  |                7 |             20 |         2.86 |
+| ~nib_hold_req_i_IBUF_BUFG                    |                                            |                                                   |               12 |             29 |         2.42 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[511]_i_1_n_9       | u_dense_buf/rstn                                  |               25 |             32 |         1.28 |
+|  instance_name/inst/clk_out1                 | u_csr_dma/addr_reg                         | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_csr_dma/external_addr[31]_i_1_n_9        | u_dense_buf/rstn                                  |               13 |             32 |         2.46 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[1023]_i_1_n_9      | u_dense_buf/rstn                                  |               14 |             32 |         2.29 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[1087]_i_1_n_9      | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[1055]_i_1_n_9      | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[159]_i_1_n_9       | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[1119]_i_1_n_9      | u_dense_buf/rstn                                  |               14 |             32 |         2.29 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[127]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[223]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[191]_i_1_n_9       | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[255]_i_1_n_9       | u_dense_buf/rstn                                  |                8 |             32 |         4.00 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[31]_i_1_n_9        | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[319]_i_1_n_9       | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[287]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[383]_i_1_n_9       | u_dense_buf/rstn                                  |                8 |             32 |         4.00 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[351]_i_1_n_9       | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[447]_i_1_n_9       | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[415]_i_1_n_9       | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[479]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_vlsu/tr/temp_reg[0][7]_i_1_n_9           | u_dense_buf/rstn                                  |               20 |             32 |         1.60 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[543]_i_1_n_9       | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[575]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[607]_i_1_n_9       | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[639]_i_1_n_9       | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[703]_i_1_n_9       | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[671]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[767]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[735]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[799]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[831]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[863]_i_1_n_9       | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[895]_i_1_n_9       | u_dense_buf/rstn                                  |               25 |             32 |         1.28 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[927]_i_1_n_9       | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[95]_i_1_n_9        | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[959]_i_1_n_9       | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[991]_i_1_n_9       | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_data[31]_i_1_n_9       | u_dense_buf/rstn                                  |               13 |             32 |         2.46 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[351]_i_1_n_9            | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/sparse_buf[63]_i_1_n_9        | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[383]_i_1_n_9            | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_vlsu/tr/temp_reg[4][7]_i_1_n_9           | u_dense_buf/rstn                                  |               21 |             32 |         1.52 |
+|  instance_name/inst/clk_out1                 | u_vlsu/tr/temp_reg[12][7]_i_1_n_9          | u_dense_buf/rstn                                  |               20 |             32 |         1.60 |
+|  instance_name/inst/clk_out1                 | u_vlsu/tr/temp_reg[8][7]_i_1_n_9           | u_dense_buf/rstn                                  |               19 |             32 |         1.68 |
+|  instance_name/inst/clk_out1                 | u_vlsu/cycle_addr[31]_i_1_n_9              | u_dense_buf/rstn                                  |               14 |             32 |         2.29 |
+|  instance_name/inst/clk_out1                 | u_vid/scalar_operand[31]_i_1_n_9           | u_dense_buf/rstn                                  |               26 |             32 |         1.23 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[255]_i_1_n_9            | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[223]_i_1_n_9            | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[1119]_i_1_n_9           | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[1087]_i_1_n_9           | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[1055]_i_1_n_9           | u_dense_buf/rstn                                  |               13 |             32 |         2.46 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[1023]_i_1_n_9           | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[319]_i_1_n_9            | u_dense_buf/rstn                                  |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[287]_i_1_n_9            | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  u_csr_dma/load_data_o_reg[31]_i_2_n_9       |                                            |                                                   |               11 |             32 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[639]_i_1_n_9            | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[767]_i_1_n_9            | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[927]_i_1_n_9            | u_dense_buf/rstn                                  |               14 |             32 |         2.29 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[799]_i_1_n_9            | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[671]_i_1_n_9            | u_dense_buf/rstn                                  |                6 |             32 |         5.33 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[607]_i_1_n_9            | u_dense_buf/rstn                                  |               13 |             32 |         2.46 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[703]_i_1_n_9            | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[575]_i_1_n_9            | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[831]_i_1_n_9            | u_dense_buf/rstn                                  |               13 |             32 |         2.46 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[991]_i_1_n_9            | u_dense_buf/rstn                                  |               13 |             32 |         2.46 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[479]_i_1_n_9            | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[543]_i_1_n_9            | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[863]_i_1_n_9            | u_dense_buf/rstn                                  |               13 |             32 |         2.46 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[511]_i_1_n_9            | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[895]_i_1_n_9            | u_dense_buf/rstn                                  |               15 |             32 |         2.13 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[735]_i_1_n_9            | u_dense_buf/rstn                                  |               10 |             32 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[959]_i_1_n_9            | u_dense_buf/rstn                                  |               16 |             32 |         2.00 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[447]_i_1_n_9            | u_dense_buf/rstn                                  |                9 |             32 |         3.56 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[191]_i_1_n_9            | u_dense_buf/rstn                                  |               12 |             32 |         2.67 |
+|  instance_name/inst/clk_out1                 | u_vex/csr_data_reg[415]_i_1_n_9            | u_dense_buf/rstn                                  |                8 |             32 |         4.00 |
+|  instance_name/inst/clk_out1                 | u_sparse_buf/store_data_count[5]_i_1_n_9   | u_dense_buf/rstn                                  |               10 |             38 |         3.80 |
+|  instance_name/inst/clk_out1                 | u_vid/hold_req_o_reg[0]_0[0]               | u_dense_buf/rstn                                  |               37 |             91 |         2.46 |
+|  instance_name/inst/clk_out1                 |                                            | u_dense_buf/rstn                                  |               64 |            113 |         1.77 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_8[0]              | u_dense_buf/rstn                                  |               44 |            128 |         2.91 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_5[0]              | u_dense_buf/rstn                                  |               56 |            128 |         2.29 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_0[0]              | u_dense_buf/rstn                                  |               43 |            128 |         2.98 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_11[0]             | u_dense_buf/rstn                                  |               45 |            128 |         2.84 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_4[0]              | u_dense_buf/rstn                                  |               43 |            128 |         2.98 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_10[0]             | u_dense_buf/rstn                                  |               40 |            128 |         3.20 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_1[0]              | u_dense_buf/rstn                                  |               42 |            128 |         3.05 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_2[0]              | u_dense_buf/rstn                                  |               36 |            128 |         3.56 |
+|  vs1_data                                    |                                            | u_dense_buf/rstn                                  |               68 |            128 |         1.88 |
+|  instance_name/inst/clk_out1                 | u_vex/tmp_reg                              | u_dense_buf/rstn                                  |               32 |            128 |         4.00 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_9[0]              | u_dense_buf/rstn                                  |               47 |            128 |         2.72 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_7[0]              | u_dense_buf/rstn                                  |              101 |            128 |         1.27 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_6[0]              | u_dense_buf/rstn                                  |               90 |            128 |         1.42 |
+|  u_vid/spmm_compute_done_r_reg_10[0]         |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  u_vid/spmm_compute_done_r_reg_15[0]         |                                            | u_dense_buf/rstn                                  |               49 |            128 |         2.61 |
+|  u_vid/spmm_compute_done_r_reg_16[0]         |                                            | u_dense_buf/rstn                                  |               54 |            128 |         2.37 |
+|  u_vid/spmm_compute_done_r_reg_18[0]         |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  u_vid/spmm_compute_done_r_reg_19[0]         |                                            | u_dense_buf/rstn                                  |               50 |            128 |         2.56 |
+|  u_vid/spmm_compute_done_r_reg_20[0]         |                                            | u_dense_buf/rstn                                  |               56 |            128 |         2.29 |
+|  u_vid/spmm_compute_done_r_reg_21[0]         |                                            | u_dense_buf/rstn                                  |               59 |            128 |         2.17 |
+|  u_vid/spmm_compute_done_r_reg_0[0]          |                                            | u_dense_buf/rstn                                  |               82 |            128 |         1.56 |
+|  u_vid/spmm_compute_done_r_reg_13[0]         |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  u_vid/spmm_compute_done_r_reg_14[0]         |                                            | u_dense_buf/rstn                                  |               59 |            128 |         2.17 |
+|  u_vid/spmm_compute_done_r_reg_12[0]         |                                            | u_dense_buf/rstn                                  |               51 |            128 |         2.51 |
+|  u_vid/spmm_compute_done_r_reg_17[0]         |                                            | u_dense_buf/rstn                                  |               54 |            128 |         2.37 |
+|  u_vid/spmm_compute_done_r_reg_2[0]          |                                            | u_dense_buf/rstn                                  |               51 |            128 |         2.51 |
+|  u_vid/spmm_compute_done_r_reg_22[0]         |                                            | u_dense_buf/rstn                                  |               83 |            128 |         1.54 |
+|  u_vid/spmm_compute_done_r_reg_23[0]         |                                            | u_dense_buf/rstn                                  |               62 |            128 |         2.06 |
+|  u_vid/spmm_compute_done_r_reg_24[0]         |                                            | u_dense_buf/rstn                                  |               64 |            128 |         2.00 |
+|  u_vid/spmm_compute_done_r_reg_26[0]         |                                            | u_dense_buf/rstn                                  |               59 |            128 |         2.17 |
+|  u_vid/spmm_compute_done_r_reg_27[0]         |                                            | u_dense_buf/rstn                                  |               58 |            128 |         2.21 |
+|  u_vid/spmm_compute_done_r_reg_28[0]         |                                            | u_dense_buf/rstn                                  |               60 |            128 |         2.13 |
+|  u_vid/spmm_compute_done_r_reg_29[0]         |                                            | u_dense_buf/rstn                                  |               65 |            128 |         1.97 |
+|  u_vid/spmm_compute_done_r_reg_30[0]         |                                            | u_dense_buf/rstn                                  |               65 |            128 |         1.97 |
+|  u_vid/spmm_compute_done_r_reg_3[0]          |                                            | u_dense_buf/rstn                                  |               50 |            128 |         2.56 |
+|  u_vid/spmm_compute_done_r_reg_31[0]         |                                            | u_dense_buf/rstn                                  |               61 |            128 |         2.10 |
+|  u_vid/spmm_compute_done_r_reg_11[0]         |                                            | u_dense_buf/rstn                                  |               46 |            128 |         2.78 |
+|  u_vid/spmm_compute_done_r_reg_25[0]         |                                            | u_dense_buf/rstn                                  |               63 |            128 |         2.03 |
+|  u_vid/spmm_compute_done_r_reg_1[0]          |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  u_vid/spmm_compute_done_r_reg_34[0]         |                                            | u_dense_buf/rstn                                  |               56 |            128 |         2.29 |
+|  u_vid/spmm_compute_done_r_reg_45[0]         |                                            | u_dense_buf/rstn                                  |               50 |            128 |         2.56 |
+|  u_vid/spmm_compute_done_r_reg_49[0]         |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  u_vid/spmm_compute_done_r_reg_9[0]          |                                            | u_dense_buf/rstn                                  |               46 |            128 |         2.78 |
+|  u_vid/spmm_compute_done_r_reg_8[0]          |                                            | u_dense_buf/rstn                                  |               51 |            128 |         2.51 |
+|  u_vid/spmm_compute_done_r_reg_33[0]         |                                            | u_dense_buf/rstn                                  |               56 |            128 |         2.29 |
+|  u_vid/spmm_compute_done_r_reg_7[0]          |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  u_vid/spmm_compute_done_r_reg_46[0]         |                                            | u_dense_buf/rstn                                  |               50 |            128 |         2.56 |
+|  u_vid/spmm_compute_done_r_reg_48[0]         |                                            | u_dense_buf/rstn                                  |               55 |            128 |         2.33 |
+|  u_vid/spmm_compute_done_r_reg_35[0]         |                                            | u_dense_buf/rstn                                  |               64 |            128 |         2.00 |
+|  u_vid/spmm_compute_done_r_reg_32[0]         |                                            | u_dense_buf/rstn                                  |               64 |            128 |         2.00 |
+|  u_vid/spmm_compute_done_r_reg_5[0]          |                                            | u_dense_buf/rstn                                  |               55 |            128 |         2.33 |
+|  u_vid/spmm_compute_done_r_reg_44[0]         |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  u_vid/spmm_compute_done_r_reg_41[0]         |                                            | u_dense_buf/rstn                                  |               54 |            128 |         2.37 |
+|  u_vid/spmm_compute_done_r_reg_4[0]          |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  u_vid/spmm_compute_done_r_reg_6[0]          |                                            | u_dense_buf/rstn                                  |               54 |            128 |         2.37 |
+|  u_vid/spmm_compute_done_r_reg_42[0]         |                                            | u_dense_buf/rstn                                  |               54 |            128 |         2.37 |
+|  u_vid/spmm_compute_done_r_reg_37[0]         |                                            | u_dense_buf/rstn                                  |               74 |            128 |         1.73 |
+|  u_vid/spmm_compute_done_r_reg_40[0]         |                                            | u_dense_buf/rstn                                  |               52 |            128 |         2.46 |
+|  u_vid/spmm_compute_done_r_reg_47[0]         |                                            | u_dense_buf/rstn                                  |               67 |            128 |         1.91 |
+|  u_vid/spmm_compute_done_r_reg_50[0]         |                                            | u_dense_buf/rstn                                  |               56 |            128 |         2.29 |
+|  u_vid/spmm_compute_done_r_reg_39[0]         |                                            | u_dense_buf/rstn                                  |               73 |            128 |         1.75 |
+|  u_vid/spmm_compute_done_r_reg_43[0]         |                                            | u_dense_buf/rstn                                  |               60 |            128 |         2.13 |
+|  u_vid/spmm_compute_done_r_reg_36[0]         |                                            | u_dense_buf/rstn                                  |               72 |            128 |         1.78 |
+|  u_vid/spmm_compute_done_r_reg_38[0]         |                                            | u_dense_buf/rstn                                  |              101 |            128 |         1.27 |
+|  n_5_8914_BUFG                               |                                            | u_dense_buf/rstn                                  |               54 |            128 |         2.37 |
+|  n_3_8912_BUFG                               |                                            | u_dense_buf/rstn                                  |               56 |            128 |         2.29 |
+|  n_0_8909_BUFG                               |                                            | u_dense_buf/rstn                                  |               54 |            128 |         2.37 |
+|  n_7_8916_BUFG                               |                                            | u_dense_buf/rstn                                  |               66 |            128 |         1.94 |
+|  n_8_8917_BUFG                               |                                            | u_dense_buf/rstn                                  |               64 |            128 |         2.00 |
+|  n_2_8911_BUFG                               |                                            | u_dense_buf/rstn                                  |               53 |            128 |         2.42 |
+|  instance_name/inst/clk_out1                 | u_vid/vd_data_src_reg[1]_3[0]              | u_dense_buf/rstn                                  |               42 |            128 |         3.05 |
+|  n_1_8910_BUFG                               |                                            | u_dense_buf/rstn                                  |               52 |            128 |         2.46 |
+|  n_4_8913_BUFG                               |                                            | u_dense_buf/rstn                                  |               50 |            128 |         2.56 |
+|  n_6_8915_BUFG                               |                                            | u_dense_buf/rstn                                  |               52 |            128 |         2.46 |
+|  spmm_data0                                  |                                            | u_dense_buf/rstn                                  |              307 |           1045 |         3.40 |
++----------------------------------------------+--------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+
+

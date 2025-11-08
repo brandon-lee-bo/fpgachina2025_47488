@@ -1,0 +1,15 @@
+Time resolution is 1 ps
+Reset complete at 10000
+vsetvli complete at 110000
+Error: unrecognised major opcode
+Time: 110 ns  Iteration: 2  Process: /tb_riscv_core/u_riscv_core/u_vid/Always891_144  Scope: tb_riscv_core.u_riscv_core.u_vid  File: E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv Line: 1044
+Loaded vs1 to v0 at 310000
+Loaded vs2 to v1 at 410000
+Performed gemv v2, v0, v1 at 510000
+Stored result to memory at 0x20 at 610000
+Time=20350000, Write Addr=00000000, Data=650f040d
+Time=20390000, Write Addr=00000004, Data=65100f06
+Time=20430000, Write Addr=00000008, Data=650c1016
+Time=20470000, Write Addr=0000000c, Data=65090a04
+Time=20590000, Write Addr=00000010, Data=6f0d0c06
+$finish called at time : 20610 ns : File "E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv" Line 110

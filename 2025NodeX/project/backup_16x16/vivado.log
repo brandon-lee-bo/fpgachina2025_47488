@@ -1,0 +1,502 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Sat Nov  8 19:44:28 2025
+# Process ID: 38164
+# Current directory: E:/SRP/fpga2025/2025NodeX/project/backup_16x16
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42000 E:\SRP\fpga2025\2025NodeX\project\backup_16x16\backup_16x16.xpr
+# Log file: E:/SRP/fpga2025/2025NodeX/project/backup_16x16/vivado.log
+# Journal file: E:/SRP/fpga2025/2025NodeX/project/backup_16x16\vivado.jou
+# Running On        :EggRoll
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 7945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :16844 MB
+# Swap memory       :27917 MB
+# Total Virtual     :44762 MB
+# Available Virtual :13869 MB
+#-----------------------------------------------------------
+start_guioopen_project E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.xprWWARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.0/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.7/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 1660.148 ; gain = 464.375
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 19:45:04 2025...
+al_core/rvv_pkg.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/rvv_pkg.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/if_id.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/if_id.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/ctrl.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/ctrl.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/dense_buffer.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/dense_buffer.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/pc_reg.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/pc_reg.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/sparse_buf.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/sparse_buf.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vcsrs.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vcsrs.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vex.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vex.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vid.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vid.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vlsu.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vlsu.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vrf.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vrf.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/riscv_core_top.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/riscv_core_top.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/single_core_tb.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/single_core_tb.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/external_mem_init.txt'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/external_mem_init.txt' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/scalar_core0_init.txt'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/scalar_core0_init.txt' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/instr_core0_init.txt'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/instr_core0_init.txt' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/csr_dma.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/csr_dma.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/rvv_pkg.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/rvv_pkg.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/if_id.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/if_id.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/ctrl.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/ctrl.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/dense_buffer.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/dense_buffer.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/pc_reg.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/pc_reg.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/sparse_buf.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/sparse_buf.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vcsrs.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vcsrs.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vex.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vex.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vid.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vid.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vlsu.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vlsu.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vrf.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vrf.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/riscv_core_top.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/riscv_core_top.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/csr_dma.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/csr_dma.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/rvv_pkg.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/rvv_pkg.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/if_id.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/if_id.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/ctrl.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/ctrl.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/dense_buffer.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/dense_buffer.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/pc_reg.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/pc_reg.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/sparse_buf.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/sparse_buf.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vcsrs.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vcsrs.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vex.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vex.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vid.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vid.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vlsu.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vlsu.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vrf.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vrf.sv' instead.
+WARNING: [Project 1-312] File not found as 'E:/SRP/fpga2025/2025NodeX/project/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/riscv_core_top.sv'; using path 'E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/riscv_core_top.sv' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 1634.719 ; gain = 317.203
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/csr_dma.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/riscv_core_top.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vrf.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vlsu.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vid.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vex.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vcsrs.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/sparse_buf.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/pc_reg.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/dense_buffer.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/ctrl.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/rvv_pkg.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/if_id.sv] -no_script -reset -force -quiet
+remove_files  {E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/csr_dma.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/riscv_core_top.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vrf.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vlsu.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vid.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vex.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/vcsrs.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/sparse_buf.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/pc_reg.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/dense_buffer.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/ctrl.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/rvv_pkg.sv E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/if_id.sv}
+add_files -norecurse {E:/SRP/fpga2025/2025NodeX/src/rtl/core/csr_dma.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/rvv_pkg.sv E:/SRP/fpga2025/2025NodeX/src/rtl/utils/dense_buffer.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/pc_reg.sv E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/if_id.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/vlsu.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/vrf.sv E:/SRP/fpga2025/2025NodeX/src/rtl/utils/sparse_buf.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv}
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_riscv_core'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/vivado/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv_core' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/external_mem_init.txt'
+INFO: [SIM-utils-43] Exported 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/scalar_core0_init.txt'
+INFO: [SIM-utils-43] Exported 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/instr_core0_init.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_riscv_core_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/csr_dma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/if_id.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module gen_pipe_dff
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+WARNING: [VRFC 10-9157] macro 'HOLD_VLSU_BIT' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv:26]
+WARNING: [VRFC 10-9157] macro 'HOLD_VEX_BIT' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv:27]
+WARNING: [VRFC 10-9157] macro 'HOLD_VID_BIT' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv:28]
+WARNING: [VRFC 10-9157] macro 'HOLD_PC_BIT' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv:29]
+WARNING: [VRFC 10-9157] macro 'HOLD_ENABLE' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv:31]
+WARNING: [VRFC 10-9157] macro 'HOLD_DISABLE' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/ctrl.sv:32]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/utils/dense_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_buf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/pc_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+WARNING: [VRFC 10-9157] macro 'INST_WIDTH' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/pc_reg.sv:16]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_core
+WARNING: [VRFC 10-2938] 'ex_extra_load_num_o' is already implicitly declared on line 264 [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:341]
+WARNING: [VRFC 10-2938] 'ex_compute_row_data_num_o' is already implicitly declared on line 263 [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:342]
+WARNING: [VRFC 10-2938] 'dense_buf_read_data_o' is already implicitly declared on line 421 [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:483]
+WARNING: [VRFC 10-3380] identifier 'external_addr_o' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:138]
+WARNING: [VRFC 10-3380] identifier 'dense_buf_read_data_o' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:300]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/utils/sparse_buf.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sparse_buf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vcsrs
+WARNING: [VRFC 10-9157] macro 'VLENB' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv:24]
+WARNING: [VRFC 10-9157] macro 'VSEW_WIDTH' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv:25]
+WARNING: [VRFC 10-9157] macro 'VLMUL_WIDTH' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv:26]
+WARNING: [VRFC 10-9157] macro 'VL_WIDTH' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vcsrs.sv:27]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vex
+WARNING: [VRFC 10-9157] macro 'HOLD_VLSU_BIT' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv:763]
+WARNING: [VRFC 10-9157] macro 'HOLD_VEX_BIT' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv:764]
+WARNING: [VRFC 10-9157] macro 'HOLD_VID_BIT' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv:765]
+WARNING: [VRFC 10-9157] macro 'HOLD_PC_BIT' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv:766]
+WARNING: [VRFC 10-9157] macro 'HOLD_ENABLE' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv:767]
+WARNING: [VRFC 10-9157] macro 'HOLD_DISABLE' is redefined [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vex.sv:768]
+INFO: [VRFC 10-311] analyzing module lane
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vid
+WARNING: [VRFC 10-3380] identifier 'extra_load_valid' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:470]
+WARNING: [VRFC 10-3380] identifier 'vd_addr_r' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:625]
+WARNING: [VRFC 10-3380] identifier 'extra_load_valid' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:642]
+WARNING: [VRFC 10-3380] identifier 'dense_buf_read_count' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:682]
+WARNING: [VRFC 10-3380] identifier 'dense_buf_read_count' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:697]
+WARNING: [VRFC 10-3380] identifier 'compute_load_extra' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:751]
+WARNING: [VRFC 10-3380] identifier 'extra_load_count' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:752]
+WARNING: [VRFC 10-3380] identifier 'compute_load_stationary' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:753]
+WARNING: [VRFC 10-3380] identifier 'compute_load_stationary_addr' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:754]
+WARNING: [VRFC 10-3380] identifier 'compute_cnt' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:775]
+WARNING: [VRFC 10-3380] identifier 'extra_load_done' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:797]
+WARNING: [VRFC 10-3380] identifier 'extra_load_num_ready_r' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:956]
+WARNING: [VRFC 10-3380] identifier 'extra_load_num_ready' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:1105]
+WARNING: [VRFC 10-3380] identifier 'extra_load_done' is used before its declaration [E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv:1212]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/vlsu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vlsu
+INFO: [VRFC 10-311] analyzing module temporary_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/rtl/core/vrf.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vrf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_core_behav xil_defaultlib.tb_riscv_core xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_core_behav xil_defaultlib.tb_riscv_core xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vs1_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:325]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vs2_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:326]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vd_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:327]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'csr_write' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:370]
+WARNING: [VRFC 10-5021] port 'dma_store_done' is not connected on this instance [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:344]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/single_core_tb.sv" Line 5. Module tb_riscv_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" Line 65. Module clk_wiz_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" Line 65. Module clk_wiz_0_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE=17) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/single_core_tb.sv" Line 5. Module tb_riscv_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" Line 65. Module clk_wiz_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" Line 65. Module clk_wiz_0_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE=17) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.rvv_pkg
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.vcsrs
+Compiling module xil_defaultlib.gen_pipe_dff
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.vid
+Compiling module xil_defaultlib.vrf_default
+Compiling module xil_defaultlib.lane
+Compiling module xil_defaultlib.vex_default
+Compiling module xil_defaultlib.temporary_reg
+Compiling module xil_defaultlib.vlsu
+Compiling module xil_defaultlib.sparse_buf
+Compiling module xil_defaultlib.dma
+Compiling module xil_defaultlib.dense_buf
+Compiling module xil_defaultlib.riscv_core
+Compiling module xil_defaultlib.tb_riscv_core
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_core_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_core_behav -key {Behavioral:sim_1:Functional:tb_riscv_core} -tclbatch {tb_riscv_core.tcl} -view {E:/SRP/fpga2025/2025NodeX/project/backup_16x16/riscv_soc_top_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config E:/SRP/fpga2025/2025NodeX/project/backup_16x16/riscv_soc_top_tb_behav.wcfg
+WARNING: Simulation object /tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_LOAD was not found in the design.
+WARNING: Simulation object /tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_LOAD was not found in the design.
+WARNING: Simulation object /tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_LOAD_VECTOR was not found in the design.
+WARNING: Simulation object /tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_STORE_VECTOR was not found in the design.
+source tb_riscv_core.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+Reset complete at 10000
+vsetvli complete at 110000
+Error: unrecognised major opcode
+Time: 110 ns  Iteration: 2  Process: /tb_riscv_core/u_riscv_core/u_vid/Always891_144  Scope: tb_riscv_core.u_riscv_core.u_vid  File: E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv Line: 1044
+Loaded vs1 to v0 at 310000
+Loaded vs2 to v1 at 410000
+Performed gemv v2, v0, v1 at 510000
+Stored result to memory at 0x20 at 610000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_core_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.754 ; gain = 107.242
+run all
+Time=20350000, Write Addr=00000000, Data=650f040d
+Time=20390000, Write Addr=00000004, Data=65100f06
+Time=20430000, Write Addr=00000008, Data=650c1016
+Time=20470000, Write Addr=0000000c, Data=65090a04
+Time=20590000, Write Addr=00000010, Data=6f0d0c06
+$finish called at time : 20610 ns : File "E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/single_core_tb.sv" Line 110
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/single_core_tb.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/single_core_tb.sv
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/scalar_core0_init.txt] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/instr_core0_init.txt] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/external_mem_init.txt] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/scalar_core0_init.txt E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/instr_core0_init.txt E:/SRP/backup_1/SPMM-based-Vector-Processor-lsm/16x16_int8_dual_core/test/external_mem_init.txt}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {E:/SRP/fpga2025/2025NodeX/src/testbench/external_mem_init.txt E:/SRP/fpga2025/2025NodeX/src/testbench/instr_core0_init.txt E:/SRP/fpga2025/2025NodeX/src/testbench/scalar_core0_init.txt}
+add_files -fileset sim_1 -norecurse E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_riscv_core'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/vivado/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv_core' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/external_mem_init.txt'
+INFO: [SIM-utils-43] Exported 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/instr_core0_init.txt'
+INFO: [SIM-utils-43] Exported 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/scalar_core0_init.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_riscv_core_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv_core
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_core_behav xil_defaultlib.tb_riscv_core xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_core_behav xil_defaultlib.tb_riscv_core xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vs1_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:325]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vs2_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:326]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vd_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:327]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'csr_write' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:370]
+WARNING: [VRFC 10-5021] port 'dma_store_done' is not connected on this instance [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:344]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv" Line 5. Module tb_riscv_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" Line 65. Module clk_wiz_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" Line 65. Module clk_wiz_0_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE=17) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv" Line 5. Module tb_riscv_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" Line 65. Module clk_wiz_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" Line 65. Module clk_wiz_0_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE=17) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.rvv_pkg
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.vcsrs
+Compiling module xil_defaultlib.gen_pipe_dff
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.vid
+Compiling module xil_defaultlib.vrf_default
+Compiling module xil_defaultlib.lane
+Compiling module xil_defaultlib.vex_default
+Compiling module xil_defaultlib.temporary_reg
+Compiling module xil_defaultlib.vlsu
+Compiling module xil_defaultlib.sparse_buf
+Compiling module xil_defaultlib.dma
+Compiling module xil_defaultlib.dense_buf
+Compiling module xil_defaultlib.riscv_core
+Compiling module xil_defaultlib.tb_riscv_core
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_core_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1919.184 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_core_behav -key {Behavioral:sim_1:Functional:tb_riscv_core} -tclbatch {tb_riscv_core.tcl} -view {E:/SRP/fpga2025/2025NodeX/project/backup_16x16/riscv_soc_top_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config E:/SRP/fpga2025/2025NodeX/project/backup_16x16/riscv_soc_top_tb_behav.wcfg
+WARNING: Simulation object /tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_LOAD was not found in the design.
+WARNING: Simulation object /tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_LOAD was not found in the design.
+WARNING: Simulation object /tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_LOAD_VECTOR was not found in the design.
+WARNING: Simulation object /tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_STORE_VECTOR was not found in the design.
+source tb_riscv_core.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+Reset complete at 10000
+vsetvli complete at 110000
+Error: unrecognised major opcode
+Time: 110 ns  Iteration: 2  Process: /tb_riscv_core/u_riscv_core/u_vid/Always891_144  Scope: tb_riscv_core.u_riscv_core.u_vid  File: E:/SRP/fpga2025/2025NodeX/src/rtl/core/vid.sv Line: 1044
+Loaded vs1 to v0 at 310000
+Loaded vs2 to v1 at 410000
+Performed gemv v2, v0, v1 at 510000
+Stored result to memory at 0x20 at 610000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_core_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1919.184 ; gain = 0.000
+run all
+Time=20350000, Write Addr=00000000, Data=650f040d
+Time=20390000, Write Addr=00000004, Data=65100f06
+Time=20430000, Write Addr=00000008, Data=650c1016
+Time=20470000, Write Addr=0000000c, Data=65090a04
+Time=20590000, Write Addr=00000010, Data=6f0d0c06
+$finish called at time : 20610 ns : File "E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv" Line 110
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.runs/synth_1
+
+launch_runs impl_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sat Nov  8 19:49:40 2025] Launched synth_1...
+Run output will be captured here: E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.runs/synth_1/runme.log
+[Sat Nov  8 19:49:40 2025] Launched impl_1...
+Run output will be captured here: E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 19:56:28 2025...

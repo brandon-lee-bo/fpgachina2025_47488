@@ -1,0 +1,2 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv_core

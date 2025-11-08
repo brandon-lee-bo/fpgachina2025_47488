@@ -1,0 +1,56 @@
+Vivado Simulator v2024.1.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_core_behav xil_defaultlib.tb_riscv_core xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vs1_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:325]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vs2_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:326]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'vd_addr_i' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:327]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'csr_write' [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:370]
+WARNING: [VRFC 10-5021] port 'dma_store_done' is not connected on this instance [E:/SRP/fpga2025/2025NodeX/src/rtl/riscv_core_top.sv:344]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv" Line 5. Module tb_riscv_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" Line 65. Module clk_wiz_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" Line 65. Module clk_wiz_0_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE=17) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/src/testbench/single_core_tb.sv" Line 5. Module tb_riscv_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" Line 65. Module clk_wiz_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" Line 65. Module clk_wiz_0_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE=17) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5157767/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/SRP/fpga2025/2025NodeX/project/backup_16x16/backup_16x16.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.rvv_pkg
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.vcsrs
+Compiling module xil_defaultlib.gen_pipe_dff
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.vid
+Compiling module xil_defaultlib.vrf_default
+Compiling module xil_defaultlib.lane
+Compiling module xil_defaultlib.vex_default
+Compiling module xil_defaultlib.temporary_reg
+Compiling module xil_defaultlib.vlsu
+Compiling module xil_defaultlib.sparse_buf
+Compiling module xil_defaultlib.dma
+Compiling module xil_defaultlib.dense_buf
+Compiling module xil_defaultlib.riscv_core
+Compiling module xil_defaultlib.tb_riscv_core
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_core_behav

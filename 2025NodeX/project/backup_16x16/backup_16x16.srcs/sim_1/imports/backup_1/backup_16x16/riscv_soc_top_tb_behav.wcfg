@@ -1,0 +1,2776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_riscv_core_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="rvv_pkg" />
+            <top_module name="tb_riscv_core" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="694.001 ns"></ZoomEndTime>
+      <Cursor1Time time="20.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="225"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="539" />
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/instance_name/clk_in1" type="logic">
+      <obj_property name="ElementShortName">clk_in1</obj_property>
+      <obj_property name="ObjectShortName">clk_in1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/core_bus_spare" type="logic">
+      <obj_property name="ElementShortName">core_bus_spare</obj_property>
+      <obj_property name="ObjectShortName">core_bus_spare</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/core_activate" type="logic">
+      <obj_property name="ElementShortName">core_activate</obj_property>
+      <obj_property name="ObjectShortName">core_activate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_ex_addr_o" type="array">
+      <obj_property name="ElementShortName">nib_ex_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nib_ex_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_ex_data_o" type="array">
+      <obj_property name="ElementShortName">nib_ex_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nib_ex_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_ex_we_o" type="logic">
+      <obj_property name="ElementShortName">nib_ex_we_o</obj_property>
+      <obj_property name="ObjectShortName">nib_ex_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_ex_data_i" type="array">
+      <obj_property name="ElementShortName">nib_ex_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nib_ex_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_ex_req_o" type="logic">
+      <obj_property name="ElementShortName">nib_ex_req_o</obj_property>
+      <obj_property name="ObjectShortName">nib_ex_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_pc_addr_o" type="array">
+      <obj_property name="ElementShortName">nib_pc_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nib_pc_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_pc_data_i" type="array">
+      <obj_property name="ElementShortName">nib_pc_data_i[1:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">nib_pc_data_i[1:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_pc_req_o" type="logic">
+      <obj_property name="ElementShortName">nib_pc_req_o</obj_property>
+      <obj_property name="ObjectShortName">nib_pc_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/nib_hold_req_i" type="logic">
+      <obj_property name="ElementShortName">nib_hold_req_i</obj_property>
+      <obj_property name="ObjectShortName">nib_hold_req_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/pc_addr_o" type="array">
+      <obj_property name="ElementShortName">pc_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/if_inst_o" type="array">
+      <obj_property name="ElementShortName">if_inst_o[1:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_inst_o[1:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/if_inst_addr_o" type="array">
+      <obj_property name="ElementShortName">if_inst_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_inst_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vs1_addr_o" type="array">
+      <obj_property name="ElementShortName">id_vs1_addr_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">id_vs1_addr_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vs2_addr_o" type="array">
+      <obj_property name="ElementShortName">id_vs2_addr_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">id_vs2_addr_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vd_addr_o" type="array">
+      <obj_property name="ElementShortName">id_vd_addr_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">id_vd_addr_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_csr_write_o" type="logic">
+      <obj_property name="ElementShortName">id_csr_write_o</obj_property>
+      <obj_property name="ObjectShortName">id_csr_write_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vex_en" type="logic">
+      <obj_property name="ElementShortName">id_vex_en</obj_property>
+      <obj_property name="ObjectShortName">id_vex_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_preserve_vl_o" type="logic">
+      <obj_property name="ElementShortName">id_preserve_vl_o</obj_property>
+      <obj_property name="ObjectShortName">id_preserve_vl_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vrf_load_o" type="logic">
+      <obj_property name="ElementShortName">id_vrf_load_o</obj_property>
+      <obj_property name="ObjectShortName">id_vrf_load_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vrf_write_o" type="logic">
+      <obj_property name="ElementShortName">id_vrf_write_o</obj_property>
+      <obj_property name="ObjectShortName">id_vrf_write_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vd_data_src_o" type="array">
+      <obj_property name="ElementShortName">id_vd_data_src_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">id_vd_data_src_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vs3_addr_src_o" type="array">
+      <obj_property name="ElementShortName">id_vs3_addr_src_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">id_vs3_addr_src_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_pe_op_o" type="array">
+      <obj_property name="ElementShortName">id_pe_op_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">id_pe_op_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_operand_select_o" type="array">
+      <obj_property name="ElementShortName">id_operand_select_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">id_operand_select_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_pe_mul_us_o" type="logic">
+      <obj_property name="ElementShortName">id_pe_mul_us_o</obj_property>
+      <obj_property name="ObjectShortName">id_pe_mul_us_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vlsu_en_o" type="logic">
+      <obj_property name="ElementShortName">id_vlsu_en_o</obj_property>
+      <obj_property name="ObjectShortName">id_vlsu_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vlsu_load_o" type="logic">
+      <obj_property name="ElementShortName">id_vlsu_load_o</obj_property>
+      <obj_property name="ObjectShortName">id_vlsu_load_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vlsu_done" type="logic">
+      <obj_property name="ElementShortName">vlsu_done</obj_property>
+      <obj_property name="ObjectShortName">vlsu_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vlsu_store_o" type="logic">
+      <obj_property name="ElementShortName">id_vlsu_store_o</obj_property>
+      <obj_property name="ObjectShortName">id_vlsu_store_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_vlsu_strided_o" type="logic">
+      <obj_property name="ElementShortName">id_vlsu_strided_o</obj_property>
+      <obj_property name="ObjectShortName">id_vlsu_strided_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/immediate_operand" type="array">
+      <obj_property name="ElementShortName">immediate_operand[11:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate_operand[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/scalar_operand" type="array">
+      <obj_property name="ElementShortName">scalar_operand[31:0]</obj_property>
+      <obj_property name="ObjectShortName">scalar_operand[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vs1_data" type="array">
+      <obj_property name="ElementShortName">vs1_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vs2_data" type="array">
+      <obj_property name="ElementShortName">vs2_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vs3_data" type="array">
+      <obj_property name="ElementShortName">vs3_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs3_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/arith_output" type="array">
+      <obj_property name="ElementShortName">arith_output[127:0]</obj_property>
+      <obj_property name="ObjectShortName">arith_output[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/comp_done" type="logic">
+      <obj_property name="ElementShortName">comp_done</obj_property>
+      <obj_property name="ObjectShortName">comp_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vlsu_wdata" type="array">
+      <obj_property name="ElementShortName">vlsu_wdata[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vlsu_wdata[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vlsu_ready" type="logic">
+      <obj_property name="ElementShortName">vlsu_ready</obj_property>
+      <obj_property name="ObjectShortName">vlsu_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/cycle_done" type="logic">
+      <obj_property name="ElementShortName">cycle_done</obj_property>
+      <obj_property name="ObjectShortName">cycle_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/data_req_o" type="logic">
+      <obj_property name="ElementShortName">data_req_o</obj_property>
+      <obj_property name="ObjectShortName">data_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/data_addr_o" type="array">
+      <obj_property name="ElementShortName">data_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/data_we_o" type="logic">
+      <obj_property name="ElementShortName">data_we_o</obj_property>
+      <obj_property name="ObjectShortName">data_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/reduction" type="logic">
+      <obj_property name="ElementShortName">reduction</obj_property>
+      <obj_property name="ObjectShortName">reduction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/data_be_o" type="array">
+      <obj_property name="ElementShortName">data_be_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_be_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/data_wdata_o" type="array">
+      <obj_property name="ElementShortName">data_wdata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_wdata_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vrf_write_lsu" type="logic">
+      <obj_property name="ElementShortName">vrf_write_lsu</obj_property>
+      <obj_property name="ObjectShortName">vrf_write_lsu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vs3_addr_vlsu" type="array">
+      <obj_property name="ElementShortName">vs3_addr_vlsu[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs3_addr_vlsu[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vl" type="array">
+      <obj_property name="ElementShortName">vl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vl[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vsew" type="array">
+      <obj_property name="ElementShortName">vsew[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vsew[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vlmul" type="array">
+      <obj_property name="ElementShortName">vlmul[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vlmul[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/hold_ctrls" type="array">
+      <obj_property name="ElementShortName">hold_ctrls[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hold_ctrls[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vex_hold_req" type="array">
+      <obj_property name="ElementShortName">vex_hold_req[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vex_hold_req[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vlsu_hold_req" type="array">
+      <obj_property name="ElementShortName">vlsu_hold_req[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vlsu_hold_req[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vid_hold_req" type="array">
+      <obj_property name="ElementShortName">vid_hold_req[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vid_hold_req[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/cycle_count" type="array">
+      <obj_property name="ElementShortName">cycle_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/max_load_cnt" type="array">
+      <obj_property name="ElementShortName">max_load_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_load_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/max_write_cnt" type="array">
+      <obj_property name="ElementShortName">max_write_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_write_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_spmm_load" type="logic">
+      <obj_property name="ElementShortName">id_spmm_load</obj_property>
+      <obj_property name="ObjectShortName">id_spmm_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_spmm_load_done" type="logic">
+      <obj_property name="ElementShortName">id_spmm_load_done</obj_property>
+      <obj_property name="ObjectShortName">id_spmm_load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_spmm_compute_done" type="logic">
+      <obj_property name="ElementShortName">ex_spmm_compute_done</obj_property>
+      <obj_property name="ObjectShortName">ex_spmm_compute_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_row_index_o" type="array">
+      <obj_property name="ElementShortName">ex_row_index_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_row_index_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_spmm_addr_ready_o" type="logic">
+      <obj_property name="ElementShortName">ex_spmm_addr_ready_o</obj_property>
+      <obj_property name="ObjectShortName">ex_spmm_addr_ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_spmm_write" type="logic">
+      <obj_property name="ElementShortName">id_spmm_write</obj_property>
+      <obj_property name="ObjectShortName">id_spmm_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dma_data_req_o" type="logic">
+      <obj_property name="ElementShortName">dma_data_req_o</obj_property>
+      <obj_property name="ObjectShortName">dma_data_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dma_sparse_data_o" type="array">
+      <obj_property name="ElementShortName">dma_sparse_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_sparse_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dma_external_addr_o" type="array">
+      <obj_property name="ElementShortName">dma_external_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_external_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dma_load_buffer_en" type="logic">
+      <obj_property name="ElementShortName">dma_load_buffer_en</obj_property>
+      <obj_property name="ObjectShortName">dma_load_buffer_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dma_sparse_store_done_o" type="logic">
+      <obj_property name="ElementShortName">dma_sparse_store_done_o</obj_property>
+      <obj_property name="ObjectShortName">dma_sparse_store_done_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dma_data_out_flag" type="logic">
+      <obj_property name="ElementShortName">dma_data_out_flag</obj_property>
+      <obj_property name="ObjectShortName">dma_data_out_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/buf_sparse_data" type="array">
+      <obj_property name="ElementShortName">buf_sparse_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buf_sparse_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_index_cal_done_o" type="logic">
+      <obj_property name="ElementShortName">ex_index_cal_done_o</obj_property>
+      <obj_property name="ObjectShortName">ex_index_cal_done_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_row_index_dense_o" type="array">
+      <obj_property name="ElementShortName">ex_row_index_dense_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_row_index_dense_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/buf_data_ready" type="logic">
+      <obj_property name="ElementShortName">buf_data_ready</obj_property>
+      <obj_property name="ObjectShortName">buf_data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/buf_load_en" type="logic">
+      <obj_property name="ElementShortName">buf_load_en</obj_property>
+      <obj_property name="ObjectShortName">buf_load_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_spmm_add_done" type="logic">
+      <obj_property name="ElementShortName">ex_spmm_add_done</obj_property>
+      <obj_property name="ObjectShortName">ex_spmm_add_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/external_addr_o" type="array">
+      <obj_property name="ElementShortName">external_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">external_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_dma_store_en" type="logic">
+      <obj_property name="ElementShortName">id_dma_store_en</obj_property>
+      <obj_property name="ObjectShortName">id_dma_store_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dma_max_data_count_o" type="array">
+      <obj_property name="ElementShortName">dma_max_data_count_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_max_data_count_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_load_index_o" type="logic">
+      <obj_property name="ElementShortName">id_load_index_o</obj_property>
+      <obj_property name="ObjectShortName">id_load_index_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_index_ready_o" type="logic">
+      <obj_property name="ElementShortName">ex_index_ready_o</obj_property>
+      <obj_property name="ObjectShortName">ex_index_ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_dense_buf_read_en_o" type="logic">
+      <obj_property name="ElementShortName">id_dense_buf_read_en_o</obj_property>
+      <obj_property name="ObjectShortName">id_dense_buf_read_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_dense_buf_data_source_o" type="array">
+      <obj_property name="ElementShortName">id_dense_buf_data_source_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">id_dense_buf_data_source_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_dense_buf_read_addr_o" type="array">
+      <obj_property name="ElementShortName">id_dense_buf_read_addr_o[5:0]</obj_property>
+      <obj_property name="ObjectShortName">id_dense_buf_read_addr_o[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_compute_rows_id_o" type="array">
+      <obj_property name="ElementShortName">ex_compute_rows_id_o[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_compute_rows_id_o[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_extra_rows_id_o" type="array">
+      <obj_property name="ElementShortName">ex_extra_rows_id_o[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_extra_rows_id_o[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_sorted_top_rows_o" type="array">
+      <obj_property name="ElementShortName">ex_sorted_top_rows_o[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_sorted_top_rows_o[0:3][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vd_data" type="array">
+      <obj_property name="ElementShortName">vd_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/vs3_addr" type="array">
+      <obj_property name="ElementShortName">vs3_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs3_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_extra_load_num_o" type="array">
+      <obj_property name="ElementShortName">ex_extra_load_num_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_extra_load_num_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/ex_compute_row_data_num_o" type="array">
+      <obj_property name="ElementShortName">ex_compute_row_data_num_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_compute_row_data_num_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/csr_write_req_o" type="logic">
+      <obj_property name="ElementShortName">csr_write_req_o</obj_property>
+      <obj_property name="ObjectShortName">csr_write_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/csr_write_data_o" type="array">
+      <obj_property name="ElementShortName">csr_write_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">csr_write_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_dense_buf_write_addr_o" type="array">
+      <obj_property name="ElementShortName">id_dense_buf_write_addr_o[5:0]</obj_property>
+      <obj_property name="ObjectShortName">id_dense_buf_write_addr_o[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/id_dense_buf_write_en_o" type="logic">
+      <obj_property name="ElementShortName">id_dense_buf_write_en_o</obj_property>
+      <obj_property name="ObjectShortName">id_dense_buf_write_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dense_buf_write_data" type="array">
+      <obj_property name="ElementShortName">dense_buf_write_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_write_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dense_buf_read_data_o" type="array">
+      <obj_property name="ElementShortName">dense_buf_read_data_o[127:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_read_data_o[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/dma_instr_valid_o" type="logic">
+      <obj_property name="ElementShortName">dma_instr_valid_o</obj_property>
+      <obj_property name="ObjectShortName">dma_instr_valid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/PC_INIT" type="array">
+      <obj_property name="ElementShortName">PC_INIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_INIT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider9235">
+      <obj_property name="label">vlsu</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vl" type="array">
+      <obj_property name="ElementShortName">vl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vl[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vsew_i" type="array">
+      <obj_property name="ElementShortName">vsew_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vsew_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vlsu_en_i" type="logic">
+      <obj_property name="ElementShortName">vlsu_en_i</obj_property>
+      <obj_property name="ObjectShortName">vlsu_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vlsu_load_i" type="logic">
+      <obj_property name="ElementShortName">vlsu_load_i</obj_property>
+      <obj_property name="ObjectShortName">vlsu_load_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vlsu_done_o" type="logic">
+      <obj_property name="ElementShortName">vlsu_done_o</obj_property>
+      <obj_property name="ObjectShortName">vlsu_done_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vlsu_store_i" type="logic">
+      <obj_property name="ElementShortName">vlsu_store_i</obj_property>
+      <obj_property name="ObjectShortName">vlsu_store_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vlsu_strided_i" type="logic">
+      <obj_property name="ElementShortName">vlsu_strided_i</obj_property>
+      <obj_property name="ObjectShortName">vlsu_strided_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vlsu_ready_o" type="logic">
+      <obj_property name="ElementShortName">vlsu_ready_o</obj_property>
+      <obj_property name="ObjectShortName">vlsu_ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/cycle_done" type="logic">
+      <obj_property name="ElementShortName">cycle_done</obj_property>
+      <obj_property name="ObjectShortName">cycle_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_req_o" type="logic">
+      <obj_property name="ElementShortName">data_req_o</obj_property>
+      <obj_property name="ObjectShortName">data_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_gnt_i" type="logic">
+      <obj_property name="ElementShortName">data_gnt_i</obj_property>
+      <obj_property name="ObjectShortName">data_gnt_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_rvalid_i" type="logic">
+      <obj_property name="ElementShortName">data_rvalid_i</obj_property>
+      <obj_property name="ObjectShortName">data_rvalid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_addr_o" type="array">
+      <obj_property name="ElementShortName">data_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_we_o" type="logic">
+      <obj_property name="ElementShortName">data_we_o</obj_property>
+      <obj_property name="ObjectShortName">data_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_be_o" type="array">
+      <obj_property name="ElementShortName">data_be_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_be_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_rdata_i" type="array">
+      <obj_property name="ElementShortName">data_rdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rdata_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_wdata_o" type="array">
+      <obj_property name="ElementShortName">data_wdata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_wdata_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/addr_data_i" type="array">
+      <obj_property name="ElementShortName">addr_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/stride_data_i" type="array">
+      <obj_property name="ElementShortName">stride_data_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">stride_data_i[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/reduction" type="logic">
+      <obj_property name="ElementShortName">reduction</obj_property>
+      <obj_property name="ObjectShortName">reduction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vr_addr_i" type="array">
+      <obj_property name="ElementShortName">vr_addr_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vr_addr_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vs_rdata_i" type="array">
+      <obj_property name="ElementShortName">vs_rdata_i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs_rdata_i[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vs_wdata_o" type="array">
+      <obj_property name="ElementShortName">vs_wdata_o[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs_wdata_o[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vs3_addr_o" type="array">
+      <obj_property name="ElementShortName">vs3_addr_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs3_addr_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vr_we_o" type="logic">
+      <obj_property name="ElementShortName">vr_we_o</obj_property>
+      <obj_property name="ObjectShortName">vr_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/au_start" type="logic">
+      <obj_property name="ElementShortName">au_start</obj_property>
+      <obj_property name="ObjectShortName">au_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/au_be" type="array">
+      <obj_property name="ElementShortName">au_be[3:0]</obj_property>
+      <obj_property name="ObjectShortName">au_be[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vd_offset" type="array">
+      <obj_property name="ElementShortName">vd_offset[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_offset[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/byte_track" type="array">
+      <obj_property name="ElementShortName">byte_track[7:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_track[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/byte_track_next" type="array">
+      <obj_property name="ElementShortName">byte_track_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_track_next[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/cycle_load" type="logic">
+      <obj_property name="ElementShortName">cycle_load</obj_property>
+      <obj_property name="ObjectShortName">cycle_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/cycle_addr_inc" type="logic">
+      <obj_property name="ElementShortName">cycle_addr_inc</obj_property>
+      <obj_property name="ObjectShortName">cycle_addr_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/store_cycles_inc" type="logic">
+      <obj_property name="ElementShortName">store_cycles_inc</obj_property>
+      <obj_property name="ObjectShortName">store_cycles_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/store_cycle_be" type="array">
+      <obj_property name="ElementShortName">store_cycle_be[3:0]</obj_property>
+      <obj_property name="ObjectShortName">store_cycle_be[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/store_cycles" type="array">
+      <obj_property name="ElementShortName">store_cycles[2:0]</obj_property>
+      <obj_property name="ObjectShortName">store_cycles[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/store_cycles_cnt" type="array">
+      <obj_property name="ElementShortName">store_cycles_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">store_cycles_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/load_cycles_cnt" type="array">
+      <obj_property name="ElementShortName">load_cycles_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">load_cycles_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_rdata_r" type="array">
+      <obj_property name="ElementShortName">data_rdata_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rdata_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/ib_select" type="array">
+      <obj_property name="ElementShortName">ib_select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ib_select[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/be_gen" type="array">
+      <obj_property name="ElementShortName">be_gen[3:0]</obj_property>
+      <obj_property name="ObjectShortName">be_gen[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/next_el_pre" type="array">
+      <obj_property name="ElementShortName">next_el_pre[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_el_pre[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/next_el_addr" type="array">
+      <obj_property name="ElementShortName">next_el_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_el_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/cycle_addr" type="array">
+      <obj_property name="ElementShortName">cycle_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/stride" type="array">
+      <obj_property name="ElementShortName">stride[9:0]</obj_property>
+      <obj_property name="ObjectShortName">stride[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/cycle_bytes" type="array">
+      <obj_property name="ElementShortName">cycle_bytes[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_bytes[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/vlsu_load" type="array">
+      <obj_property name="ElementShortName">vlsu_load[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vlsu_load[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vlsu/data_rvalid" type="array">
+      <obj_property name="ElementShortName">data_rvalid[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rvalid[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider5185">
+      <obj_property name="label">vrf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs1_data" type="array">
+      <obj_property name="ElementShortName">vs1_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs2_data" type="array">
+      <obj_property name="ElementShortName">vs2_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs3_data" type="array">
+      <obj_property name="ElementShortName">vs3_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs3_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vd_data" type="array">
+      <obj_property name="ElementShortName">vd_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs1_addr_i" type="array">
+      <obj_property name="ElementShortName">vs1_addr_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_addr_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs2_addr_i" type="array">
+      <obj_property name="ElementShortName">vs2_addr_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_addr_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vd_addr_i" type="array">
+      <obj_property name="ElementShortName">vd_addr_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_addr_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vsew" type="array">
+      <obj_property name="ElementShortName">vsew[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vsew[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vl" type="array">
+      <obj_property name="ElementShortName">vl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vl[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vlmul" type="array">
+      <obj_property name="ElementShortName">vlmul[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vlmul[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/max_load_cnt" type="array">
+      <obj_property name="ElementShortName">max_load_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_load_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/max_write_cnt" type="array">
+      <obj_property name="ElementShortName">max_write_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_write_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/reduction" type="logic">
+      <obj_property name="ElementShortName">reduction</obj_property>
+      <obj_property name="ObjectShortName">reduction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/write_en" type="logic">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/load_en" type="logic">
+      <obj_property name="ElementShortName">load_en</obj_property>
+      <obj_property name="ObjectShortName">load_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vrf_banks" type="array">
+      <obj_property name="ElementShortName">vrf_banks[0:3][0:11][31:0]</obj_property>
+      <obj_property name="ObjectShortName">vrf_banks[0:3][0:11][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/load_cnt" type="array">
+      <obj_property name="ElementShortName">load_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">load_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/write_cnt" type="array">
+      <obj_property name="ElementShortName">write_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">write_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/reached_load_max" type="logic">
+      <obj_property name="ElementShortName">reached_load_max</obj_property>
+      <obj_property name="ObjectShortName">reached_load_max</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/reached_write_max" type="logic">
+      <obj_property name="ElementShortName">reached_write_max</obj_property>
+      <obj_property name="ObjectShortName">reached_write_max</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs1_addr" type="array">
+      <obj_property name="ElementShortName">vs1_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs2_addr" type="array">
+      <obj_property name="ElementShortName">vs2_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vd_addr" type="array">
+      <obj_property name="ElementShortName">vd_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vd_data_unpacked" type="array">
+      <obj_property name="ElementShortName">vd_data_unpacked[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_data_unpacked[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/lane_rst" type="array">
+      <obj_property name="ElementShortName">lane_rst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lane_rst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/reg_idx" type="array">
+      <obj_property name="ElementShortName">reg_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/lane_wr" type="array">
+      <obj_property name="ElementShortName">lane_wr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lane_wr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/element_base_idx" type="array">
+      <obj_property name="ElementShortName">element_base_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">element_base_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/element_idx_of_lane" type="array">
+      <obj_property name="ElementShortName">element_idx_of_lane[7:0]</obj_property>
+      <obj_property name="ObjectShortName">element_idx_of_lane[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/current_write_addr" type="array">
+      <obj_property name="ElementShortName">current_write_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_write_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/write_data_for_lane" type="array">
+      <obj_property name="ElementShortName">write_data_for_lane[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data_for_lane[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/current_reg_value" type="array">
+      <obj_property name="ElementShortName">current_reg_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">current_reg_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/next_reg_value" type="array">
+      <obj_property name="ElementShortName">next_reg_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_reg_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].vs1_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].vs1_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].vs1_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].vs2_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].vs2_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].vs2_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].vs3_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].vs3_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].vs3_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].vs1_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].vs1_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].vs1_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].vs2_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].vs2_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].vs2_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].vs3_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].vs3_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].vs3_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].vs1_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].vs1_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].vs1_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].vs2_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].vs2_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].vs2_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].vs3_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].vs3_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].vs3_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].vs1_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].vs1_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].vs1_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].vs2_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].vs2_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].vs2_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].vs3_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].vs3_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].vs3_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/LANES" type="array">
+      <obj_property name="ElementShortName">LANES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LANES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/NUM_REGS" type="array">
+      <obj_property name="ElementShortName">NUM_REGS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_REGS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/VRF_BANK_DEPTH" type="array">
+      <obj_property name="ElementShortName">VRF_BANK_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VRF_BANK_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/VRF_WIDTH" type="array">
+      <obj_property name="ElementShortName">VRF_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VRF_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/ADDR_WIDTH" type="array">
+      <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/BYTES_PER_WORD" type="array">
+      <obj_property name="ElementShortName">BYTES_PER_WORD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BYTES_PER_WORD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[0].LSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[0].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[0].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[0].MSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[0].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[0].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[1].LSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[1].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[1].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[1].MSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[1].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[1].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[2].LSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[2].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[2].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[2].MSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[2].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[2].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[3].LSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[3].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[3].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[3].MSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[3].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[3].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].LSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].MSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].LSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].MSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].LSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].MSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].LSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].MSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider3">
+      <obj_property name="label">core0_vid</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/instr_o" type="array">
+      <obj_property name="ElementShortName">instr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/immediate_operand" type="array">
+      <obj_property name="ElementShortName">immediate_operand[11:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate_operand[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vs1_addr" type="array">
+      <obj_property name="ElementShortName">vs1_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vs2_addr" type="array">
+      <obj_property name="ElementShortName">vs2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vd_addr" type="array">
+      <obj_property name="ElementShortName">vd_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/bus_spare" type="logic">
+      <obj_property name="ElementShortName">bus_spare</obj_property>
+      <obj_property name="ObjectShortName">bus_spare</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/core_activate" type="logic">
+      <obj_property name="ElementShortName">core_activate</obj_property>
+      <obj_property name="ObjectShortName">core_activate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/csr_write" type="logic">
+      <obj_property name="ElementShortName">csr_write</obj_property>
+      <obj_property name="ObjectShortName">csr_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vex_en" type="logic">
+      <obj_property name="ElementShortName">vex_en</obj_property>
+      <obj_property name="ObjectShortName">vex_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/preserve_vl" type="logic">
+      <obj_property name="ElementShortName">preserve_vl</obj_property>
+      <obj_property name="ObjectShortName">preserve_vl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vrf_load" type="logic">
+      <obj_property name="ElementShortName">vrf_load</obj_property>
+      <obj_property name="ObjectShortName">vrf_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vrf_write" type="logic">
+      <obj_property name="ElementShortName">vrf_write</obj_property>
+      <obj_property name="ObjectShortName">vrf_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/reduction" type="logic">
+      <obj_property name="ElementShortName">reduction</obj_property>
+      <obj_property name="ObjectShortName">reduction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/cycle_count" type="array">
+      <obj_property name="ElementShortName">cycle_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/max_load_cnt" type="array">
+      <obj_property name="ElementShortName">max_load_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_load_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/max_write_cnt" type="array">
+      <obj_property name="ElementShortName">max_write_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_write_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vd_data_src" type="array">
+      <obj_property name="ElementShortName">vd_data_src[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_data_src[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vs3_addr_src" type="array">
+      <obj_property name="ElementShortName">vs3_addr_src[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vs3_addr_src[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/pe_op" type="array">
+      <obj_property name="ElementShortName">pe_op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/operand_select" type="array">
+      <obj_property name="ElementShortName">operand_select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_select[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/hold_id" type="logic">
+      <obj_property name="ElementShortName">hold_id</obj_property>
+      <obj_property name="ObjectShortName">hold_id</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/instr_i" type="array">
+      <obj_property name="ElementShortName">instr_i[1:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_i[1:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vl" type="array">
+      <obj_property name="ElementShortName">vl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vl[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vsew" type="array">
+      <obj_property name="ElementShortName">vsew[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vsew[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vlmul" type="array">
+      <obj_property name="ElementShortName">vlmul[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vlmul[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/nib_hold_req_i" type="logic">
+      <obj_property name="ElementShortName">nib_hold_req_i</obj_property>
+      <obj_property name="ObjectShortName">nib_hold_req_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/scalar_operand_ready" type="logic">
+      <obj_property name="ElementShortName">scalar_operand_ready</obj_property>
+      <obj_property name="ObjectShortName">scalar_operand_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/scalar_operand" type="array">
+      <obj_property name="ElementShortName">scalar_operand[31:0]</obj_property>
+      <obj_property name="ObjectShortName">scalar_operand[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vlsu_en_o" type="logic">
+      <obj_property name="ElementShortName">vlsu_en_o</obj_property>
+      <obj_property name="ObjectShortName">vlsu_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vlsu_load_o" type="logic">
+      <obj_property name="ElementShortName">vlsu_load_o</obj_property>
+      <obj_property name="ObjectShortName">vlsu_load_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vlsu_store_o" type="logic">
+      <obj_property name="ElementShortName">vlsu_store_o</obj_property>
+      <obj_property name="ObjectShortName">vlsu_store_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vlsu_strided_o" type="logic">
+      <obj_property name="ElementShortName">vlsu_strided_o</obj_property>
+      <obj_property name="ObjectShortName">vlsu_strided_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vlsu_done_i" type="logic">
+      <obj_property name="ElementShortName">vlsu_done_i</obj_property>
+      <obj_property name="ObjectShortName">vlsu_done_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/hold_req_o" type="array">
+      <obj_property name="ElementShortName">hold_req_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hold_req_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/sparse_write" type="logic">
+      <obj_property name="ElementShortName">sparse_write</obj_property>
+      <obj_property name="ObjectShortName">sparse_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/sparse_load" type="logic">
+      <obj_property name="ElementShortName">sparse_load</obj_property>
+      <obj_property name="ObjectShortName">sparse_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/addr_ready" type="logic">
+      <obj_property name="ElementShortName">addr_ready</obj_property>
+      <obj_property name="ObjectShortName">addr_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/spmm_load_done" type="logic">
+      <obj_property name="ElementShortName">spmm_load_done</obj_property>
+      <obj_property name="ObjectShortName">spmm_load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/spmm_compute_done" type="logic">
+      <obj_property name="ElementShortName">spmm_compute_done</obj_property>
+      <obj_property name="ObjectShortName">spmm_compute_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/index_cal_done" type="logic">
+      <obj_property name="ElementShortName">index_cal_done</obj_property>
+      <obj_property name="ObjectShortName">index_cal_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/row_index" type="array">
+      <obj_property name="ElementShortName">row_index[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_index[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/row_index_dense_i" type="array">
+      <obj_property name="ElementShortName">row_index_dense_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_index_dense_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/load_index_o" type="logic">
+      <obj_property name="ElementShortName">load_index_o</obj_property>
+      <obj_property name="ObjectShortName">load_index_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/load_index_ready_i" type="logic">
+      <obj_property name="ElementShortName">load_index_ready_i</obj_property>
+      <obj_property name="ObjectShortName">load_index_ready_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_load_num_i" type="array">
+      <obj_property name="ElementShortName">extra_load_num_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">extra_load_num_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_row_data_num" type="array">
+      <obj_property name="ElementShortName">compute_row_data_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">compute_row_data_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/top_rows_id" type="array">
+      <obj_property name="ElementShortName">top_rows_id[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">top_rows_id[0:3][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_rows_id" type="array">
+      <obj_property name="ElementShortName">extra_rows_id[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">extra_rows_id[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_rows_id_i" type="array">
+      <obj_property name="ElementShortName">compute_rows_id_i[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">compute_rows_id_i[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_buf_write_en_o" type="logic">
+      <obj_property name="ElementShortName">dense_buf_write_en_o</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_write_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_buf_read_en_o" type="logic">
+      <obj_property name="ElementShortName">dense_buf_read_en_o</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_read_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_buf_read_addr_o" type="array">
+      <obj_property name="ElementShortName">dense_buf_read_addr_o[5:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_read_addr_o[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_buf_write_addr_o" type="array">
+      <obj_property name="ElementShortName">dense_buf_write_addr_o[5:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_write_addr_o[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_buf_data_source_o" type="array">
+      <obj_property name="ElementShortName">dense_buf_data_source_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_data_source_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dma_store_done" type="logic">
+      <obj_property name="ElementShortName">dma_store_done</obj_property>
+      <obj_property name="ObjectShortName">dma_store_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dma_instr_valid_o" type="logic">
+      <obj_property name="ElementShortName">dma_instr_valid_o</obj_property>
+      <obj_property name="ObjectShortName">dma_instr_valid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dma_buf_store_o" type="logic">
+      <obj_property name="ElementShortName">dma_buf_store_o</obj_property>
+      <obj_property name="ObjectShortName">dma_buf_store_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dma_max_data_cnt" type="array">
+      <obj_property name="ElementShortName">dma_max_data_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_max_data_cnt[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dma_store_en" type="logic">
+      <obj_property name="ElementShortName">dma_store_en</obj_property>
+      <obj_property name="ObjectShortName">dma_store_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/state" type="array">
+      <obj_property name="ElementShortName">state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/max_cycle_count" type="array">
+      <obj_property name="ElementShortName">max_cycle_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_cycle_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/multi_cycle_instr" type="logic">
+      <obj_property name="ElementShortName">multi_cycle_instr</obj_property>
+      <obj_property name="ObjectShortName">multi_cycle_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/fix_vd_addr" type="logic">
+      <obj_property name="ElementShortName">fix_vd_addr</obj_property>
+      <obj_property name="ObjectShortName">fix_vd_addr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/reg_instr" type="array">
+      <obj_property name="ElementShortName">reg_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_index_reg" type="array">
+      <obj_property name="ElementShortName">dense_index_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_index_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_id_reg" type="array">
+      <obj_property name="ElementShortName">dense_id_reg[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_id_reg[0:3][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_done_r" type="logic">
+      <obj_property name="ElementShortName">compute_done_r</obj_property>
+      <obj_property name="ObjectShortName">compute_done_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/funct6" type="array">
+      <obj_property name="ElementShortName">funct6[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct6[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/number_rows" type="array">
+      <obj_property name="ElementShortName">number_rows[5:0]</obj_property>
+      <obj_property name="ObjectShortName">number_rows[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/row_index_reg" type="array">
+      <obj_property name="ElementShortName">row_index_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_index_reg[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_row_index" type="array">
+      <obj_property name="ElementShortName">extra_row_index[15:0]</obj_property>
+      <obj_property name="ObjectShortName">extra_row_index[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/load_index_ready_r" type="logic">
+      <obj_property name="ElementShortName">load_index_ready_r</obj_property>
+      <obj_property name="ObjectShortName">load_index_ready_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/load_vector_count" type="array">
+      <obj_property name="ElementShortName">load_vector_count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">load_vector_count[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/nib_hold_req_r" type="logic">
+      <obj_property name="ElementShortName">nib_hold_req_r</obj_property>
+      <obj_property name="ObjectShortName">nib_hold_req_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_buf_read_en_o_tag" type="logic">
+      <obj_property name="ElementShortName">dense_buf_read_en_o_tag</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_read_en_o_tag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vd_addr_r" type="array">
+      <obj_property name="ElementShortName">vd_addr_r[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_addr_r[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vl_zero_indexed" type="array">
+      <obj_property name="ElementShortName">vl_zero_indexed[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vl_zero_indexed[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/rd_tep" type="array">
+      <obj_property name="ElementShortName">rd_tep[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_tep[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_read_addr" type="array">
+      <obj_property name="ElementShortName">dense_read_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_read_addr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_write_addr" type="array">
+      <obj_property name="ElementShortName">dense_write_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_write_addr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_load_count" type="array">
+      <obj_property name="ElementShortName">extra_load_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">extra_load_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_load_finish" type="logic">
+      <obj_property name="ElementShortName">compute_load_finish</obj_property>
+      <obj_property name="ObjectShortName">compute_load_finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_buf_read_en_o" type="logic">
+      <obj_property name="ElementShortName">dense_buf_read_en_o</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_read_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vrf_load" type="logic">
+      <obj_property name="ElementShortName">vrf_load</obj_property>
+      <obj_property name="ObjectShortName">vrf_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_load_extra" type="logic">
+      <obj_property name="ElementShortName">compute_load_extra</obj_property>
+      <obj_property name="ObjectShortName">compute_load_extra</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_load_stationary" type="logic">
+      <obj_property name="ElementShortName">compute_load_stationary</obj_property>
+      <obj_property name="ObjectShortName">compute_load_stationary</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_cnt" type="array">
+      <obj_property name="ElementShortName">compute_cnt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">compute_cnt[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vs2_addr" type="array">
+      <obj_property name="ElementShortName">vs2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_load_done" type="logic">
+      <obj_property name="ElementShortName">compute_load_done</obj_property>
+      <obj_property name="ObjectShortName">compute_load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vrf_write" type="logic">
+      <obj_property name="ElementShortName">vrf_write</obj_property>
+      <obj_property name="ObjectShortName">vrf_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/vd_addr" type="array">
+      <obj_property name="ElementShortName">vd_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_load_stationary_addr" type="array">
+      <obj_property name="ElementShortName">compute_load_stationary_addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">compute_load_stationary_addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/compute_valid" type="logic">
+      <obj_property name="ElementShortName">compute_valid</obj_property>
+      <obj_property name="ObjectShortName">compute_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_load_num_reg" type="array">
+      <obj_property name="ElementShortName">extra_load_num_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">extra_load_num_reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_load_num_ready" type="logic">
+      <obj_property name="ElementShortName">extra_load_num_ready</obj_property>
+      <obj_property name="ObjectShortName">extra_load_num_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_load_num_ready_r" type="logic">
+      <obj_property name="ElementShortName">extra_load_num_ready_r</obj_property>
+      <obj_property name="ObjectShortName">extra_load_num_ready_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/dense_buf_read_count" type="array">
+      <obj_property name="ElementShortName">dense_buf_read_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dense_buf_read_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_load_valid" type="logic">
+      <obj_property name="ElementShortName">extra_load_valid</obj_property>
+      <obj_property name="ObjectShortName">extra_load_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/extra_load_done" type="logic">
+      <obj_property name="ElementShortName">extra_load_done</obj_property>
+      <obj_property name="ObjectShortName">extra_load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_OPCODE_SPMM" type="array">
+      <obj_property name="ElementShortName">V_OPCODE_SPMM[6:0]</obj_property>
+      <obj_property name="ObjectShortName">V_OPCODE_SPMM[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_COMPUTE" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_COMPUTE[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_COMPUTE[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_LOAD" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_LOAD[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_LOAD[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_STORE" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_STORE[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_STORE[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_ADD" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_ADD[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_ADD[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_LOAD" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_SPMM_LOAD[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_SPMM_LOAD[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_CAL_INDEX" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_CAL_INDEX[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_CAL_INDEX[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_FIX_ROW" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_FIX_ROW[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_FIX_ROW[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_LOAD_VECTOR" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_SPMM_LOAD_VECTOR[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_SPMM_LOAD_VECTOR[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/V_FUNCT6_SPMM_STORE_VECTOR" type="array">
+      <obj_property name="ElementShortName">V_FUNCT6_SPMM_STORE_VECTOR[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V_FUNCT6_SPMM_STORE_VECTOR[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/OFFSET_MATRIX" type="array">
+      <obj_property name="ElementShortName">OFFSET_MATRIX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET_MATRIX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/OFFSET_FLEXIBLE_MATRIX" type="array">
+      <obj_property name="ElementShortName">OFFSET_FLEXIBLE_MATRIX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET_FLEXIBLE_MATRIX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/DENSE_WB_SRC_ARITH" type="array">
+      <obj_property name="ElementShortName">DENSE_WB_SRC_ARITH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DENSE_WB_SRC_ARITH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/DENSE_WB_SRC_VLSU" type="array">
+      <obj_property name="ElementShortName">DENSE_WB_SRC_VLSU[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DENSE_WB_SRC_VLSU[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vid/OFFSET_TEMP_MATRIX" type="array">
+      <obj_property name="ElementShortName">OFFSET_TEMP_MATRIX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET_TEMP_MATRIX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider121">
+      <obj_property name="label">core0_vex</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/arith_output" type="array">
+      <obj_property name="ElementShortName">arith_output[127:0]</obj_property>
+      <obj_property name="ObjectShortName">arith_output[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/hold_req_o" type="array">
+      <obj_property name="ElementShortName">hold_req_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hold_req_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/comp_done" type="logic">
+      <obj_property name="ElementShortName">comp_done</obj_property>
+      <obj_property name="ObjectShortName">comp_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vs2_data_i" type="array">
+      <obj_property name="ElementShortName">vs2_data_i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_data_i[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/pe_b_data" type="array">
+      <obj_property name="ElementShortName">pe_b_data[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_b_data[0:15][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/tmp_reg" type="array">
+      <obj_property name="ElementShortName">tmp_reg[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp_reg[0:15][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/pe_out" type="array">
+      <obj_property name="ElementShortName">pe_out[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_out[0:15][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vex_en" type="logic">
+      <obj_property name="ElementShortName">vex_en</obj_property>
+      <obj_property name="ObjectShortName">vex_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vrf_load" type="logic">
+      <obj_property name="ElementShortName">vrf_load</obj_property>
+      <obj_property name="ObjectShortName">vrf_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vrf_write" type="logic">
+      <obj_property name="ElementShortName">vrf_write</obj_property>
+      <obj_property name="ObjectShortName">vrf_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vs1_data_i" type="array">
+      <obj_property name="ElementShortName">vs1_data_i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_data_i[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/scalar_operand" type="array">
+      <obj_property name="ElementShortName">scalar_operand[31:0]</obj_property>
+      <obj_property name="ObjectShortName">scalar_operand[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/imm_operand" type="array">
+      <obj_property name="ElementShortName">imm_operand[4:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_operand[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/cycle_count" type="array">
+      <obj_property name="ElementShortName">cycle_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/max_cycle_cnt" type="array">
+      <obj_property name="ElementShortName">max_cycle_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_cycle_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/op" type="array">
+      <obj_property name="ElementShortName">op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/operand_select" type="array">
+      <obj_property name="ElementShortName">operand_select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_select[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vl" type="array">
+      <obj_property name="ElementShortName">vl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vl[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vsew" type="array">
+      <obj_property name="ElementShortName">vsew[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vsew[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/nib_hold_i" type="logic">
+      <obj_property name="ElementShortName">nib_hold_i</obj_property>
+      <obj_property name="ObjectShortName">nib_hold_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/csr_data_i" type="array">
+      <obj_property name="ElementShortName">csr_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">csr_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_index" type="array">
+      <obj_property name="ElementShortName">row_index[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_index[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/addr_ready" type="logic">
+      <obj_property name="ElementShortName">addr_ready</obj_property>
+      <obj_property name="ObjectShortName">addr_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/csr_load" type="logic">
+      <obj_property name="ElementShortName">csr_load</obj_property>
+      <obj_property name="ObjectShortName">csr_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/csr_write" type="logic">
+      <obj_property name="ElementShortName">csr_write</obj_property>
+      <obj_property name="ObjectShortName">csr_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_compute_done" type="logic">
+      <obj_property name="ElementShortName">spmm_compute_done</obj_property>
+      <obj_property name="ObjectShortName">spmm_compute_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_load_done" type="logic">
+      <obj_property name="ElementShortName">spmm_load_done</obj_property>
+      <obj_property name="ObjectShortName">spmm_load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/load_row_index_i" type="logic">
+      <obj_property name="ElementShortName">load_row_index_i</obj_property>
+      <obj_property name="ObjectShortName">load_row_index_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/compute_row_data_num" type="array">
+      <obj_property name="ElementShortName">compute_row_data_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">compute_row_data_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/index_ready" type="logic">
+      <obj_property name="ElementShortName">index_ready</obj_property>
+      <obj_property name="ObjectShortName">index_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/index_cal_done" type="logic">
+      <obj_property name="ElementShortName">index_cal_done</obj_property>
+      <obj_property name="ObjectShortName">index_cal_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/compute_rows_id" type="array">
+      <obj_property name="ElementShortName">compute_rows_id[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">compute_rows_id[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/extra_rows_id" type="array">
+      <obj_property name="ElementShortName">extra_rows_id[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">extra_rows_id[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/cal_stationary_done" type="logic">
+      <obj_property name="ElementShortName">cal_stationary_done</obj_property>
+      <obj_property name="ObjectShortName">cal_stationary_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_index_dense" type="array">
+      <obj_property name="ElementShortName">row_index_dense[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_index_dense[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/extra_load_num_o" type="array">
+      <obj_property name="ElementShortName">extra_load_num_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">extra_load_num_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/sorted_top_rows" type="array">
+      <obj_property name="ElementShortName">sorted_top_rows[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">sorted_top_rows[0:3][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/buf_load_en" type="logic">
+      <obj_property name="ElementShortName">buf_load_en</obj_property>
+      <obj_property name="ObjectShortName">buf_load_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/buf_data_ready" type="logic">
+      <obj_property name="ElementShortName">buf_data_ready</obj_property>
+      <obj_property name="ObjectShortName">buf_data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/dma_store_done" type="logic">
+      <obj_property name="ElementShortName">dma_store_done</obj_property>
+      <obj_property name="ObjectShortName">dma_store_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/accum_reg" type="array">
+      <obj_property name="ElementShortName">accum_reg[0:3][127:0]</obj_property>
+      <obj_property name="ObjectShortName">accum_reg[0:3][127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/final_accum_value_reg" type="array">
+      <obj_property name="ElementShortName">final_accum_value_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">final_accum_value_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_finish" type="logic">
+      <obj_property name="ElementShortName">spmm_finish</obj_property>
+      <obj_property name="ObjectShortName">spmm_finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/csr_data_reg" type="array">
+      <obj_property name="ElementShortName">csr_data_reg[1119:0]</obj_property>
+      <obj_property name="ObjectShortName">csr_data_reg[1119:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_valid" type="logic">
+      <obj_property name="ElementShortName">spmm_valid</obj_property>
+      <obj_property name="ObjectShortName">spmm_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_data_ptr" type="array">
+      <obj_property name="ElementShortName">spmm_data_ptr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_data_ptr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_data_num" type="array">
+      <obj_property name="ElementShortName">spmm_data_num[7:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_data_num[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_row_data" type="array">
+      <obj_property name="ElementShortName">spmm_row_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_row_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_row_index" type="array">
+      <obj_property name="ElementShortName">spmm_row_index[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_row_index[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_addr_ready" type="logic">
+      <obj_property name="ElementShortName">spmm_addr_ready</obj_property>
+      <obj_property name="ObjectShortName">spmm_addr_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_load_count" type="array">
+      <obj_property name="ElementShortName">spmm_load_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_load_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_index_count_r" type="array">
+      <obj_property name="ElementShortName">spmm_index_count_r[4:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_index_count_r[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_row_data_num" type="array">
+      <obj_property name="ElementShortName">spmm_row_data_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_row_data_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/tmp_reg" type="array">
+      <obj_property name="ElementShortName">tmp_reg[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp_reg[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_compute_indice_ptr" type="array">
+      <obj_property name="ElementShortName">spmm_compute_indice_ptr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_compute_indice_ptr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_compute_done_r" type="logic">
+      <obj_property name="ElementShortName">spmm_compute_done_r</obj_property>
+      <obj_property name="ObjectShortName">spmm_compute_done_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_compute_indice_base" type="array">
+      <obj_property name="ElementShortName">spmm_compute_indice_base[7:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_compute_indice_base[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_compute_done_r_r" type="logic">
+      <obj_property name="ElementShortName">spmm_compute_done_r_r</obj_property>
+      <obj_property name="ObjectShortName">spmm_compute_done_r_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_total_index_buf" type="array">
+      <obj_property name="ElementShortName">spmm_total_index_buf[0:15][15:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_total_index_buf[0:15][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_row_data_buf" type="array">
+      <obj_property name="ElementShortName">spmm_row_data_buf[0:15][4:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_row_data_buf[0:15][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_stationary_reg" type="array">
+      <obj_property name="ElementShortName">row_stationary_reg[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">row_stationary_reg[0:3][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_index_ready" type="logic">
+      <obj_property name="ElementShortName">row_index_ready</obj_property>
+      <obj_property name="ObjectShortName">row_index_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/pe_out" type="array">
+      <obj_property name="ElementShortName">pe_out[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_out[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/pe_b_data" type="array">
+      <obj_property name="ElementShortName">pe_b_data[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_b_data[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_add_done" type="array">
+      <obj_property name="ElementShortName">spmm_add_done[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_add_done[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vs1_data" type="array">
+      <obj_property name="ElementShortName">vs1_data[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_data[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/vs2_data" type="array">
+      <obj_property name="ElementShortName">vs2_data[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_data[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/csr_data" type="array">
+      <obj_property name="ElementShortName">csr_data[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">csr_data[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_index" type="array">
+      <obj_property name="ElementShortName">spmm_index[159:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_index[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_data" type="array">
+      <obj_property name="ElementShortName">spmm_data[639:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_data[639:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_indices" type="array">
+      <obj_property name="ElementShortName">spmm_indices[319:0]</obj_property>
+      <obj_property name="ObjectShortName">spmm_indices[319:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/store_data_count" type="array">
+      <obj_property name="ElementShortName">store_data_count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">store_data_count[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/buf_load_en_r" type="logic">
+      <obj_property name="ElementShortName">buf_load_en_r</obj_property>
+      <obj_property name="ObjectShortName">buf_load_en_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/load_matrix_num" type="array">
+      <obj_property name="ElementShortName">load_matrix_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">load_matrix_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/load_done" type="logic">
+      <obj_property name="ElementShortName">load_done</obj_property>
+      <obj_property name="ObjectShortName">load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_cnt" type="array">
+      <obj_property name="ElementShortName">row_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">row_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/cur_data_num" type="array">
+      <obj_property name="ElementShortName">cur_data_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_data_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_counts" type="array">
+      <obj_property name="ElementShortName">row_counts[0:15][4:0]</obj_property>
+      <obj_property name="ObjectShortName">row_counts[0:15][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/sorted_rows" type="array">
+      <obj_property name="ElementShortName">sorted_rows[0:15][3:0]</obj_property>
+      <obj_property name="ObjectShortName">sorted_rows[0:15][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/sorted_counts" type="array">
+      <obj_property name="ElementShortName">sorted_counts[0:15][4:0]</obj_property>
+      <obj_property name="ObjectShortName">sorted_counts[0:15][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/top_rows" type="array">
+      <obj_property name="ElementShortName">top_rows[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">top_rows[0:3][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/top_counts" type="array">
+      <obj_property name="ElementShortName">top_counts[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">top_counts[0:3][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/spmm_addr_ready_r" type="logic">
+      <obj_property name="ElementShortName">spmm_addr_ready_r</obj_property>
+      <obj_property name="ObjectShortName">spmm_addr_ready_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/load_index_count" type="array">
+      <obj_property name="ElementShortName">load_index_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">load_index_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/load_row_index_r" type="logic">
+      <obj_property name="ElementShortName">load_row_index_r</obj_property>
+      <obj_property name="ObjectShortName">load_row_index_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_index_r" type="array">
+      <obj_property name="ElementShortName">row_index_r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_index_r[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_extra_index" type="array">
+      <obj_property name="ElementShortName">row_extra_index[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_extra_index[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/row_stationary_index" type="array">
+      <obj_property name="ElementShortName">row_stationary_index[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_stationary_index[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/extra_load_num_r" type="array">
+      <obj_property name="ElementShortName">extra_load_num_r[4:0]</obj_property>
+      <obj_property name="ObjectShortName">extra_load_num_r[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/compute_matrix_num" type="array">
+      <obj_property name="ElementShortName">compute_matrix_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">compute_matrix_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/LANES" type="array">
+      <obj_property name="ElementShortName">LANES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LANES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/ROW_STATIONARY_NUM" type="array">
+      <obj_property name="ElementShortName">ROW_STATIONARY_NUM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ROW_STATIONARY_NUM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/DEPTH" type="array">
+      <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/VEX_WIDTH" type="array">
+      <obj_property name="ElementShortName">VEX_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VEX_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/MAX_INDEX_POINTER" type="array">
+      <obj_property name="ElementShortName">MAX_INDEX_POINTER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_INDEX_POINTER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/MAX_INDICES" type="array">
+      <obj_property name="ElementShortName">MAX_INDICES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_INDICES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/MAX_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">MAX_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vex/MAX_DATA_COUNT" type="array">
+      <obj_property name="ElementShortName">MAX_DATA_COUNT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_DATA_COUNT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider222">
+      <obj_property name="label">core0_dense_buf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/write_en_i" type="logic">
+      <obj_property name="ElementShortName">write_en_i</obj_property>
+      <obj_property name="ObjectShortName">write_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/write_addr_i" type="array">
+      <obj_property name="ElementShortName">write_addr_i[5:0]</obj_property>
+      <obj_property name="ObjectShortName">write_addr_i[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/write_data_i" type="array">
+      <obj_property name="ElementShortName">write_data_i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data_i[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/read_en_i" type="logic">
+      <obj_property name="ElementShortName">read_en_i</obj_property>
+      <obj_property name="ObjectShortName">read_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/read_addr_i" type="array">
+      <obj_property name="ElementShortName">read_addr_i[5:0]</obj_property>
+      <obj_property name="ObjectShortName">read_addr_i[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/read_data_o" type="array">
+      <obj_property name="ElementShortName">read_data_o[127:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_o[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem" type="array">
+      <obj_property name="ElementShortName">mem[0:59][127:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:59][127:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[0]" type="array">
+         <obj_property name="ElementShortName">[0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[1]" type="array">
+         <obj_property name="ElementShortName">[1][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[2]" type="array">
+         <obj_property name="ElementShortName">[2][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[3]" type="array">
+         <obj_property name="ElementShortName">[3][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[4]" type="array">
+         <obj_property name="ElementShortName">[4][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[5]" type="array">
+         <obj_property name="ElementShortName">[5][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[6]" type="array">
+         <obj_property name="ElementShortName">[6][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[7]" type="array">
+         <obj_property name="ElementShortName">[7][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[8]" type="array">
+         <obj_property name="ElementShortName">[8][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[9]" type="array">
+         <obj_property name="ElementShortName">[9][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[10]" type="array">
+         <obj_property name="ElementShortName">[10][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[11]" type="array">
+         <obj_property name="ElementShortName">[11][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[12]" type="array">
+         <obj_property name="ElementShortName">[12][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[13]" type="array">
+         <obj_property name="ElementShortName">[13][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[14]" type="array">
+         <obj_property name="ElementShortName">[14][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[15]" type="array">
+         <obj_property name="ElementShortName">[15][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[16]" type="array">
+         <obj_property name="ElementShortName">[16][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[17]" type="array">
+         <obj_property name="ElementShortName">[17][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[18]" type="array">
+         <obj_property name="ElementShortName">[18][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[19]" type="array">
+         <obj_property name="ElementShortName">[19][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[20]" type="array">
+         <obj_property name="ElementShortName">[20][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[21]" type="array">
+         <obj_property name="ElementShortName">[21][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[22]" type="array">
+         <obj_property name="ElementShortName">[22][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[23]" type="array">
+         <obj_property name="ElementShortName">[23][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[24]" type="array">
+         <obj_property name="ElementShortName">[24][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[25]" type="array">
+         <obj_property name="ElementShortName">[25][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[26]" type="array">
+         <obj_property name="ElementShortName">[26][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[27]" type="array">
+         <obj_property name="ElementShortName">[27][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[28]" type="array">
+         <obj_property name="ElementShortName">[28][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[29]" type="array">
+         <obj_property name="ElementShortName">[29][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[30]" type="array">
+         <obj_property name="ElementShortName">[30][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[31]" type="array">
+         <obj_property name="ElementShortName">[31][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[32]" type="array">
+         <obj_property name="ElementShortName">[32][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[33]" type="array">
+         <obj_property name="ElementShortName">[33][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[34]" type="array">
+         <obj_property name="ElementShortName">[34][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[35]" type="array">
+         <obj_property name="ElementShortName">[35][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[36]" type="array">
+         <obj_property name="ElementShortName">[36][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[37]" type="array">
+         <obj_property name="ElementShortName">[37][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[38]" type="array">
+         <obj_property name="ElementShortName">[38][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[39]" type="array">
+         <obj_property name="ElementShortName">[39][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[40]" type="array">
+         <obj_property name="ElementShortName">[40][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[41]" type="array">
+         <obj_property name="ElementShortName">[41][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[42]" type="array">
+         <obj_property name="ElementShortName">[42][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[43]" type="array">
+         <obj_property name="ElementShortName">[43][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[44]" type="array">
+         <obj_property name="ElementShortName">[44][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[45]" type="array">
+         <obj_property name="ElementShortName">[45][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[46]" type="array">
+         <obj_property name="ElementShortName">[46][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[47]" type="array">
+         <obj_property name="ElementShortName">[47][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[48]" type="array">
+         <obj_property name="ElementShortName">[48][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[49]" type="array">
+         <obj_property name="ElementShortName">[49][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[50]" type="array">
+         <obj_property name="ElementShortName">[50][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[51]" type="array">
+         <obj_property name="ElementShortName">[51][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[52]" type="array">
+         <obj_property name="ElementShortName">[52][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[53]" type="array">
+         <obj_property name="ElementShortName">[53][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[54]" type="array">
+         <obj_property name="ElementShortName">[54][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[55]" type="array">
+         <obj_property name="ElementShortName">[55][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[56]" type="array">
+         <obj_property name="ElementShortName">[56][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[57]" type="array">
+         <obj_property name="ElementShortName">[57][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[58]" type="array">
+         <obj_property name="ElementShortName">[58][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[59]" type="array">
+         <obj_property name="ElementShortName">[59][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[0]" type="array">
+         <obj_property name="ElementShortName">[0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[1]" type="array">
+         <obj_property name="ElementShortName">[1][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[2]" type="array">
+         <obj_property name="ElementShortName">[2][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[3]" type="array">
+         <obj_property name="ElementShortName">[3][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[4]" type="array">
+         <obj_property name="ElementShortName">[4][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[5]" type="array">
+         <obj_property name="ElementShortName">[5][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[6]" type="array">
+         <obj_property name="ElementShortName">[6][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[7]" type="array">
+         <obj_property name="ElementShortName">[7][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[8]" type="array">
+         <obj_property name="ElementShortName">[8][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[9]" type="array">
+         <obj_property name="ElementShortName">[9][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[10]" type="array">
+         <obj_property name="ElementShortName">[10][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[11]" type="array">
+         <obj_property name="ElementShortName">[11][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[12]" type="array">
+         <obj_property name="ElementShortName">[12][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[13]" type="array">
+         <obj_property name="ElementShortName">[13][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[14]" type="array">
+         <obj_property name="ElementShortName">[14][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[15]" type="array">
+         <obj_property name="ElementShortName">[15][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[16]" type="array">
+         <obj_property name="ElementShortName">[16][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[17]" type="array">
+         <obj_property name="ElementShortName">[17][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[18]" type="array">
+         <obj_property name="ElementShortName">[18][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[19]" type="array">
+         <obj_property name="ElementShortName">[19][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[20]" type="array">
+         <obj_property name="ElementShortName">[20][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[21]" type="array">
+         <obj_property name="ElementShortName">[21][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[22]" type="array">
+         <obj_property name="ElementShortName">[22][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[23]" type="array">
+         <obj_property name="ElementShortName">[23][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[24]" type="array">
+         <obj_property name="ElementShortName">[24][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[25]" type="array">
+         <obj_property name="ElementShortName">[25][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[26]" type="array">
+         <obj_property name="ElementShortName">[26][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[27]" type="array">
+         <obj_property name="ElementShortName">[27][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[28]" type="array">
+         <obj_property name="ElementShortName">[28][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[29]" type="array">
+         <obj_property name="ElementShortName">[29][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[30]" type="array">
+         <obj_property name="ElementShortName">[30][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[31]" type="array">
+         <obj_property name="ElementShortName">[31][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[32]" type="array">
+         <obj_property name="ElementShortName">[32][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[33]" type="array">
+         <obj_property name="ElementShortName">[33][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[34]" type="array">
+         <obj_property name="ElementShortName">[34][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[35]" type="array">
+         <obj_property name="ElementShortName">[35][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[36]" type="array">
+         <obj_property name="ElementShortName">[36][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[37]" type="array">
+         <obj_property name="ElementShortName">[37][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[38]" type="array">
+         <obj_property name="ElementShortName">[38][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[39]" type="array">
+         <obj_property name="ElementShortName">[39][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[40]" type="array">
+         <obj_property name="ElementShortName">[40][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[41]" type="array">
+         <obj_property name="ElementShortName">[41][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[42]" type="array">
+         <obj_property name="ElementShortName">[42][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[43]" type="array">
+         <obj_property name="ElementShortName">[43][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[44]" type="array">
+         <obj_property name="ElementShortName">[44][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[45]" type="array">
+         <obj_property name="ElementShortName">[45][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[46]" type="array">
+         <obj_property name="ElementShortName">[46][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[47]" type="array">
+         <obj_property name="ElementShortName">[47][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[48]" type="array">
+         <obj_property name="ElementShortName">[48][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[49]" type="array">
+         <obj_property name="ElementShortName">[49][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[50]" type="array">
+         <obj_property name="ElementShortName">[50][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[51]" type="array">
+         <obj_property name="ElementShortName">[51][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[52]" type="array">
+         <obj_property name="ElementShortName">[52][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[53]" type="array">
+         <obj_property name="ElementShortName">[53][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[54]" type="array">
+         <obj_property name="ElementShortName">[54][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[55]" type="array">
+         <obj_property name="ElementShortName">[55][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[56]" type="array">
+         <obj_property name="ElementShortName">[56][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[57]" type="array">
+         <obj_property name="ElementShortName">[57][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[58]" type="array">
+         <obj_property name="ElementShortName">[58][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/mem[59]" type="array">
+         <obj_property name="ElementShortName">[59][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/ADDR_WIDTH" type="array">
+      <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_dense_buf/DEPTH" type="array">
+      <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider235">
+      <obj_property name="label">core0_vrf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs1_data" type="array">
+      <obj_property name="ElementShortName">vs1_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs2_data" type="array">
+      <obj_property name="ElementShortName">vs2_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs3_data" type="array">
+      <obj_property name="ElementShortName">vs3_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vs3_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vd_data" type="array">
+      <obj_property name="ElementShortName">vd_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs1_addr_i" type="array">
+      <obj_property name="ElementShortName">vs1_addr_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_addr_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs2_addr_i" type="array">
+      <obj_property name="ElementShortName">vs2_addr_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_addr_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vd_addr_i" type="array">
+      <obj_property name="ElementShortName">vd_addr_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_addr_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vsew" type="array">
+      <obj_property name="ElementShortName">vsew[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vsew[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vl" type="array">
+      <obj_property name="ElementShortName">vl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vl[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vlmul" type="array">
+      <obj_property name="ElementShortName">vlmul[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vlmul[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/max_load_cnt" type="array">
+      <obj_property name="ElementShortName">max_load_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_load_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/max_write_cnt" type="array">
+      <obj_property name="ElementShortName">max_write_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">max_write_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/reduction" type="logic">
+      <obj_property name="ElementShortName">reduction</obj_property>
+      <obj_property name="ObjectShortName">reduction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/write_en" type="logic">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/load_en" type="logic">
+      <obj_property name="ElementShortName">load_en</obj_property>
+      <obj_property name="ObjectShortName">load_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vrf_banks" type="array">
+      <obj_property name="ElementShortName">vrf_banks[0:3][0:11][31:0]</obj_property>
+      <obj_property name="ObjectShortName">vrf_banks[0:3][0:11][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/load_cnt" type="array">
+      <obj_property name="ElementShortName">load_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">load_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/write_cnt" type="array">
+      <obj_property name="ElementShortName">write_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">write_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/reached_load_max" type="logic">
+      <obj_property name="ElementShortName">reached_load_max</obj_property>
+      <obj_property name="ObjectShortName">reached_load_max</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/reached_write_max" type="logic">
+      <obj_property name="ElementShortName">reached_write_max</obj_property>
+      <obj_property name="ObjectShortName">reached_write_max</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs1_addr" type="array">
+      <obj_property name="ElementShortName">vs1_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vs2_addr" type="array">
+      <obj_property name="ElementShortName">vs2_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vd_addr" type="array">
+      <obj_property name="ElementShortName">vd_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/vd_data_unpacked" type="array">
+      <obj_property name="ElementShortName">vd_data_unpacked[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">vd_data_unpacked[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/lane_rst" type="array">
+      <obj_property name="ElementShortName">lane_rst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lane_rst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/reg_idx" type="array">
+      <obj_property name="ElementShortName">reg_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/lane_wr" type="array">
+      <obj_property name="ElementShortName">lane_wr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lane_wr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/element_base_idx" type="array">
+      <obj_property name="ElementShortName">element_base_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">element_base_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/element_idx_of_lane" type="array">
+      <obj_property name="ElementShortName">element_idx_of_lane[7:0]</obj_property>
+      <obj_property name="ObjectShortName">element_idx_of_lane[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/current_write_addr" type="array">
+      <obj_property name="ElementShortName">current_write_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_write_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/write_data_for_lane" type="array">
+      <obj_property name="ElementShortName">write_data_for_lane[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data_for_lane[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/current_reg_value" type="array">
+      <obj_property name="ElementShortName">current_reg_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">current_reg_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/next_reg_value" type="array">
+      <obj_property name="ElementShortName">next_reg_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_reg_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].vs1_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].vs1_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].vs1_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].vs2_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].vs2_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].vs2_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].vs3_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].vs3_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].vs3_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].vs1_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].vs1_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].vs1_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].vs2_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].vs2_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].vs2_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].vs3_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].vs3_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].vs3_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].vs1_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].vs1_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].vs1_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].vs2_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].vs2_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].vs2_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].vs3_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].vs3_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].vs3_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].vs1_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].vs1_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].vs1_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].vs2_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].vs2_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].vs2_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].vs3_read_lane_w " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].vs3_read_lane_w [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].vs3_read_lane_w [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/LANES" type="array">
+      <obj_property name="ElementShortName">LANES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LANES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/NUM_REGS" type="array">
+      <obj_property name="ElementShortName">NUM_REGS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_REGS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/VRF_BANK_DEPTH" type="array">
+      <obj_property name="ElementShortName">VRF_BANK_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VRF_BANK_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/VRF_WIDTH" type="array">
+      <obj_property name="ElementShortName">VRF_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VRF_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/ADDR_WIDTH" type="array">
+      <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/BYTES_PER_WORD" type="array">
+      <obj_property name="ElementShortName">BYTES_PER_WORD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BYTES_PER_WORD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[0].LSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[0].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[0].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[0].MSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[0].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[0].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[1].LSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[1].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[1].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[1].MSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[1].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[1].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[2].LSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[2].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[2].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[2].MSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[2].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[2].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[3].LSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[3].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[3].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\write_unpack_gen[3].MSB " type="array">
+      <obj_property name="ElementShortName">\write_unpack_gen[3].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\write_unpack_gen[3].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].LSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[0].MSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[0].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[0].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].LSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[1].MSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[1].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[1].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].LSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[2].MSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[2].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[2].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].LSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].LSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].LSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_core/u_riscv_core/u_vrf/\read_gen[3].MSB " type="array">
+      <obj_property name="ElementShortName">\read_gen[3].MSB [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\read_gen[3].MSB [31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider312">
+   </wvobject>
+</wave_config>
